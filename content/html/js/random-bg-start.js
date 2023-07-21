@@ -18,10 +18,7 @@ function backgr(){
         "content/img/theme/bg-start/15.webp",
         "content/img/theme/bg-start/16.webp",
         "content/img/theme/bg-start/17.webp",
-        "content/img/theme/bg-start/18.png",
-
-
-
+        "content/img/theme/bg-start/18.png"
 
     ];
     var randimg =Math.floor(Math.random()*18);

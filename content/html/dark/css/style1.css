@@ -38,8 +38,8 @@ header {
   header li a {
   color: blue;
   text-decoration: none;
-
   }
+
   header li.visited {
     color: blue;
   }
@@ -49,8 +49,16 @@ header {
 /* layout links background START */
 .layoutlinks {
   background-color: rgb(26, 29, 25);
+  text-align: right;
+  font-size: 20px;
 }
 /* layout links background END */
+
+
+
+
+
+
 
 
 /* move main up START */
@@ -70,7 +78,7 @@ th{
 
 /* link START */
 a:link {color: rgb(90, 90, 255)}
-a:visited{color: rgb(113, 35, 185);}
+a:visited{color: rgb(131, 102, 160);}
 a:hover {
     color: rgb(0, 0, 145);
     background-color: rgb(172, 172, 172);
@@ -94,3 +102,12 @@ a:active {
 .sixh {max-width: 600px;}
 .sevenh {max-width: 700px;}
 /* paragraphs END */
+
+
+/* superscript START */
+sup {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+/* superscript END */
