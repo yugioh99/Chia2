@@ -1,110 +1,19 @@
-// show hide function and element Id has the same name for ease of use.
-// It goes from sh1 to sh100
+/* When the user clicks on the button, myFunction myDropdown
+toggle between hiding and showing the dropdown content */
+function showhidenav() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-// <button onclick="sh1()">This is the button</button> 
-
-// <div id="sh1">example of element Id</div>
-
-
-function sh1() { var x = document.getElementById("sh1"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh2() { var x = document.getElementById("sh2"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh3() { var x = document.getElementById("sh3"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh4() { var x = document.getElementById("sh4"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh5() { var x = document.getElementById("sh5"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh6() { var x = document.getElementById("sh6"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh7() { var x = document.getElementById("sh7"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh8() { var x = document.getElementById("sh8"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh9() { var x = document.getElementById("sh9"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh10() { var x = document.getElementById("sh10"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh11() { var x = document.getElementById("sh11"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh12() { var x = document.getElementById("sh12"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh13() { var x = document.getElementById("sh13"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh14() { var x = document.getElementById("sh14"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh15() { var x = document.getElementById("sh15"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh16() { var x = document.getElementById("sh16"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh17() { var x = document.getElementById("sh17"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh18() { var x = document.getElementById("sh18"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh19() { var x = document.getElementById("sh19"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh20() { var x = document.getElementById("sh20"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh21() { var x = document.getElementById("sh21"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh22() { var x = document.getElementById("sh22"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh23() { var x = document.getElementById("sh23"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh24() { var x = document.getElementById("sh24"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh25() { var x = document.getElementById("sh25"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh26() { var x = document.getElementById("sh26"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh27() { var x = document.getElementById("sh27"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh28() { var x = document.getElementById("sh28"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh29() { var x = document.getElementById("sh29"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh30() { var x = document.getElementById("sh30"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh31() { var x = document.getElementById("sh31"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh32() { var x = document.getElementById("sh32"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh33() { var x = document.getElementById("sh33"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh34() { var x = document.getElementById("sh34"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh35() { var x = document.getElementById("sh35"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh36() { var x = document.getElementById("sh36"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh37() { var x = document.getElementById("sh37"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh38() { var x = document.getElementById("sh38"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh39() { var x = document.getElementById("sh39"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh40() { var x = document.getElementById("sh40"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh41() { var x = document.getElementById("sh41"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh42() { var x = document.getElementById("sh42"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh43() { var x = document.getElementById("sh43"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh44() { var x = document.getElementById("sh44"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh45() { var x = document.getElementById("sh45"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh46() { var x = document.getElementById("sh46"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh47() { var x = document.getElementById("sh47"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh48() { var x = document.getElementById("sh48"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh49() { var x = document.getElementById("sh49"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh50() { var x = document.getElementById("sh50"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh51() { var x = document.getElementById("sh51"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh52() { var x = document.getElementById("sh52"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh53() { var x = document.getElementById("sh53"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh54() { var x = document.getElementById("sh54"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh55() { var x = document.getElementById("sh55"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh56() { var x = document.getElementById("sh56"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh57() { var x = document.getElementById("sh57"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh58() { var x = document.getElementById("sh58"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh59() { var x = document.getElementById("sh59"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh60() { var x = document.getElementById("sh60"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh61() { var x = document.getElementById("sh61"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh62() { var x = document.getElementById("sh62"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh63() { var x = document.getElementById("sh63"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh64() { var x = document.getElementById("sh64"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh65() { var x = document.getElementById("sh65"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh66() { var x = document.getElementById("sh66"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh67() { var x = document.getElementById("sh67"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh68() { var x = document.getElementById("sh68"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh69() { var x = document.getElementById("sh69"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh70() { var x = document.getElementById("sh70"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh71() { var x = document.getElementById("sh71"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh72() { var x = document.getElementById("sh72"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh73() { var x = document.getElementById("sh73"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh74() { var x = document.getElementById("sh74"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh75() { var x = document.getElementById("sh75"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh76() { var x = document.getElementById("sh76"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh77() { var x = document.getElementById("sh77"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh78() { var x = document.getElementById("sh78"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh79() { var x = document.getElementById("sh79"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh80() { var x = document.getElementById("sh80"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh81() { var x = document.getElementById("sh81"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh82() { var x = document.getElementById("sh82"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh83() { var x = document.getElementById("sh83"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh84() { var x = document.getElementById("sh84"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh85() { var x = document.getElementById("sh85"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh86() { var x = document.getElementById("sh86"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh87() { var x = document.getElementById("sh87"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh88() { var x = document.getElementById("sh88"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh89() { var x = document.getElementById("sh89"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh90() { var x = document.getElementById("sh90"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh91() { var x = document.getElementById("sh91"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh92() { var x = document.getElementById("sh92"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh93() { var x = document.getElementById("sh93"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh94() { var x = document.getElementById("sh94"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh95() { var x = document.getElementById("sh95"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh96() { var x = document.getElementById("sh96"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh97() { var x = document.getElementById("sh97"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh98() { var x = document.getElementById("sh98"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh99() { var x = document.getElementById("sh99"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-function sh100() { var x = document.getElementById("sh100"); if (x.style.display === "none") { x.style.display = "block"; } else {  x.style.display = "none"; } }
-
-
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 

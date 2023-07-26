@@ -6,13 +6,21 @@
 	</head>
 
 	<body>
-<!-- header START -->
+
 <header>
 	<nav>
 	<ul>
-		<li><a name="top" href="../../home.html">Home</a> &gt;</li> 
+		<li><a href="../../home.html">Home</a> &gt;</li> 
 		<li><a href="../index.html">User Manual</a> &gt;</li>
-		<li><button style="font-size: 16px;">Navigation</button></li>
+		<li><div class="dropdown">
+			<button onclick="showhidenav()" class="dropbtn">Navigation - - - - - - - - -</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="template.html">template</a>
+			<li><span><a href="#">Join Us</a></span></li>
+			</div>
+			</div> </li>
 		
 <!-- list item template START
 <li><a href="#">Join Us</a> &gt;</li>
@@ -31,12 +39,14 @@ nav dropdown menu END -->
 	</ul>
 	</nav>
 </header>
-<!-- header END -->
 
 
 <main>
-<h1><img src="../../../../img/manual/navigation-icon.png" height="30px"> Navigation</h1><hr>
+	
+<h1><img src="../../../../img/icons/navigation.png" height="30px"> Navigation</h1><hr>
 
+<!-- section home page -->
+<section>
 <p>There are links for switching between layouts and themes at the top of the home page.</p>
 <!-- change layout START -->
 <table width="100%" class="layoutlinks">
@@ -57,40 +67,33 @@ nav dropdown menu END -->
 	</tr>
 </table>
 <!-- change layout END -->
-<hr>
-<h3><a name="navbar"></a> Navigation Bar</h3>
-<p class="sevenh">On other pages you will see navigation links at the top of the page.
+</section>
+<br>
+<!-- section navigation bar -->
+<section id="navigation-bar">
+<h3>Navigation Bar</h3>
+<p>On other pages you will see navigation links at the top of the page.
 At the top of this page you can see that you started at <a href="../../home.html">Home</a> , then went to  <a href="../index.html">User Manual</a> and now you are at  <a href="index.html">Navigation</a>. </p>
-<hr>
-<h3><a name="sh-button"></a>Show / Hide button</h3>
-<p>Click the Show/Hide button for more information.<br>
-	<button onclick="sh2()">Show / Hide</button> 
-	<div id="sh2" hidden>More information here.<br>
-		Click it again to hide it.<a name="test"></a>
-	
-	<button onclick="sh2()">Hide</button> 	
-	</div>
-</p>
-<hr>
+</section>
+<br>
+<!-- section footnotes -->
+<section>
 <h3><a name="footnotes"></a>Footnotes</h3>
 <p class="sevenh">Click on the number inside the brackets &#91;1-12 &#93; to see the corresponding footnote.</p>
 <p class="sevenh">The footnotes will be at the bottom of the page. The first number is the footnote ID. The second </p>
-
+</section>
 
 
 </main>
 
 <br><br>
 <br><br>
+<br><br>
+<br><br>
+<a href="#navigation-bar">nav bar</a>
 
 
-<!-- 
-<a href="#top">Go to the Top of page</a>
--->
 
-<!-- template sub START 
-<p><a href="template-sub.html">template-sub</a>: Use this template for subsections.</p>
-template sub END -->
 
 <!-- template for buttons START
 
@@ -104,37 +107,6 @@ template sub END -->
 
 template for buttons END -->
 
-<!-- template for table START
-
-<table border="4" width="100%">
-	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-templates for table END	-->
 
 
 	</body>

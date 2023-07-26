@@ -18,7 +18,8 @@ body{
 
 
 /* a tag START */
-a:link, :visited {color: rgb(26, 30, 250)
+a:link, :visited {color: rgb(26, 30, 250);
+
 }
 
 a:hover {
@@ -39,10 +40,14 @@ a:hover {
 
 .linkp {
   margin-top: 0px;
-}
-.linka {
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  
+  
+  display: inline-block;
+
 }
+
 /* background for link text END */
 
 
