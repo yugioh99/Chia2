@@ -41,18 +41,22 @@ a:hover {
   border-radius: 50px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(102, 27, 27);
+  border-color: rgb(235, 196, 196);
   display: inline-block;
   font-size: 30px;
+  background-color: rgb(233, 185, 185);
+  border-style: inset;
 }
 .linkm {
   margin-top: 0px;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(68, 139, 89, 0.3);
+  border-color: rgba(56, 119, 75, 0.3);
   display: inline-block;
   font-size: 30px;
+  background-color: rgb(172, 221, 205);
+  border-style: inset;
 }
 
 /* background for link text END */
@@ -85,7 +89,7 @@ a:hover {
   border-width: 5px;
   border-style: inset;
   border-color: rgb(85, 100, 100);
-  background-color: rgba(92, 104, 107, 0.5);
+  background-color: rgba(92, 104, 107, 1);
 }
 .startpage-img {
   width: 320px;
