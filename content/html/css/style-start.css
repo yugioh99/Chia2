@@ -38,7 +38,6 @@ a:hover {
 
 .linkl {
   margin-top: 0px;
-  background-color: rgba(73, 23, 23, 0.5);
   border-radius: 50px;
   border-width: 5px;
   border-style: solid;
@@ -48,7 +47,6 @@ a:hover {
 }
 .linkm {
   margin-top: 0px;
-  background-color: rgba(88, 139, 72, 0.3);
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
@@ -90,7 +88,7 @@ a:hover {
   background-color: rgba(92, 104, 107, 0.5);
 }
 .startpage-img {
-  width: 270px;
+  width: 320px;
   border-radius: 20px;
 }
 
