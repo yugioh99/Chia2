@@ -1,18 +1,15 @@
 html {
-  font-size: 6vw; 
+  
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(29, 28, 39);
     color: rgb(255, 255, 255);
     max-width: 95vw;
     margin-left: 2vw;
-    margin-top: 50vh;
+    margin-top: 5vh;
     margin-bottom: 10px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+
   }
 
 
@@ -25,6 +22,7 @@ a:link, :visited {color: rgb(26, 30, 250);
 a:hover {
     color: rgb(250, 26, 64);
     text-decoration: underline;
+    background-color: rgba(35, 35, 160, 0.5);
   }
   
   a:active {
@@ -38,16 +36,65 @@ a:hover {
 
 /* background for link text START */
 
-.linkp {
+.linkl {
   margin-top: 0px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  
-  
+  background-color: rgba(73, 23, 23, 0.5);
+  border-radius: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(102, 27, 27);
   display: inline-block;
-
+  font-size: 30px;
+}
+.linkm {
+  margin-top: 0px;
+  background-color: rgba(88, 139, 72, 0.3);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(68, 139, 89, 0.3);
+  display: inline-block;
+  font-size: 30px;
 }
 
 /* background for link text END */
 
+/*
+---------------------------------------------------------------
+*/
+
+/* start page container START  */
+.startpage-container {
+
+  
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  border: hidden;
+  padding: 10px;
+}
+
+
+.startpage-div {
+  display: inline-block;
+  
+
+  text-align: center;
+ 
+  min-width: 40%;
+  border-radius: 30px;
+  border-width: 5px;
+  border-style: inset;
+  border-color: rgb(85, 100, 100);
+  background-color: rgba(92, 104, 107, 0.5);
+}
+.startpage-img {
+  width: 270px;
+  border-radius: 20px;
+}
+
+/*
+---------------------------------------------------------------
+*/
 
