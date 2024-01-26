@@ -1,0 +1,405 @@
+html {
+    
+}
+
+
+/* body START */
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    max-width: 85vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/* body END */
+
+
+/* ----------------------------------------------------------------------  */
+
+/* header START */
+header {
+  background-color: rgb(53, 1, 1);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 30px;
+  display: flex;
+  align-items: left;
+  box-shadow: 0 0 25px 0 black;
+  }
+  header * {
+  display: inline;
+  }
+  header li {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(53, 1, 1);
+  }
+  header li a {
+  color: blue;
+  text-decoration: none;
+  }
+
+  header li a:visited {
+    color: blue;
+  }
+/* header END */
+
+/* ----------------------------------------------------------------------  */
+
+/* move main up START */
+.moveup {
+margin-top: -45px;
+}
+/* move main up END */
+/* ----------------------------------------------------------------------  */
+
+/* main, section and footer, article START */
+
+main {
+  
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 11px;
+
+  background-color: rgb(55, 55, 55);
+  border-radius: 50px;
+}
+
+
+footer {
+  
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+
+  background-color: rgb(70, 70, 70);
+
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: rgb(38, 60, 184);
+  border-style: outset;
+
+}
+
+
+
+section {
+  font-size: 22px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+
+  background-color: rgb(24, 24, 24);
+ 
+  border-radius: 30px;
+  border-color: rgb(129, 6, 6);
+  border-style: solid;
+  border-width: 3px;
+
+}
+
+
+article {
+  font-size: 22px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+
+  background-color: rgb(30, 30, 30);
+ 
+  border-radius: 20px;
+  border-color: rgb(14, 51, 153);
+  border-style: solid;
+  border-width: 3px;
+
+}
+
+
+/* main, section and footer, article END */
+
+/* ----------------------------------------------------------------------  */
+
+/* div and p containers START */
+
+/* top of home page  */
+.home-top-container {
+
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  border: hidden;
+  
+}
+.home-top-left {
+  display: inline-block;
+  text-align: center;
+  vertical-align: 60px;
+  font-size: 70px;
+  min-width: 50%;
+}
+
+
+.home-top-right {
+  display: inline-block;
+  background-color: rgb(72, 136, 233);
+  
+  text-align: center;
+  font-size: 25px;
+  
+  padding: 0px;
+  border-radius: 30px;
+  border-width: 10px;
+  border-style: outset;
+  border-color: rgb(78, 94, 235);
+}
+
+.home-top-right:hover {
+  background-color: rgb(40, 173, 62);
+}
+
+.home-top-settings-img {
+  max-width: 170px;
+}
+
+
+.htr
+{
+  color: black;
+  text-decoration: underline
+}
+
+/*  div home page */
+.hpdiv-container {
+
+ 
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  border: none;
+  border-spacing: 50px 0px;
+  
+}
+
+.hpdiv-left {
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+.hpdiv-right {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  font-size: 22px;
+}
+
+/* div containers footnotes */
+.footnote-container {
+
+  display: block;
+  align-items: normal;
+  max-width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+/*
+
+
+*/
+
+.footnote-div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 30%;
+  font-size: 20px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-width: 3px;
+  border-color: rgb(31, 195, 201);
+  border-style: outset;
+  border-radius: 5px;
+
+  
+}
+
+/* header for footnote div */
+
+.fndiv-header {
+  text-align: center;
+
+  background-color: rgb(4, 71, 71);
+}
+
+/* paragraph */
+p {
+  margin-top: 0px;
+  margin-bottom: 0px
+
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+
+
+
+}
+
+/*   
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+
+
+*/
+
+/* div and p containers END */
+
+/* ----------------------------------------------------------------------  */
+
+/* standardized img sizes START */
+
+
+/* blue border no background width */
+
+.img-blue2 {
+  width: 200px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+.img-blue3 {
+  width: 300px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+.img-blue-icon {
+  height: 40px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+
+
+/* brown border no background */
+
+.img-brown2 {
+  width: 200px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+.img-brown3 {
+  width: 300px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+.img-brown-icon {
+  height: 40px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+
+/* img no border no fill */
+.img-noborder2 { width: 200px;}
+.img-noborder3 {width: 300px;}
+.img-noborder-icon {height: 40px;}
+
+
+
+
+
+
+
+/* standardized img sizes END */
+
+/* ----------------------------------------------------------------------  */
+
+
+
+
+/* ----------------------------------------------------------------------  */
+
+/* table START */
+th{
+  background-color: rgb(116, 91, 91);
+  
+}
+/* table END */
+
+
+/* ----------------------------------------------------------------------  */
+
+/* link START */
+a:link {color: rgb(90, 90, 255)}
+a:visited{color: rgb(180, 127, 233);}
+a:hover {
+    color: rgb(0, 0, 145);
+    background-color: rgb(172, 172, 172);
+    text-decoration: underline;
+  }
+  
+a:active {
+    color: blue;
+    background-color: rgb(50, 50, 50);
+    text-decoration: underline;
+  }
+
+/* link END */
+/* ----------------------------------------------------------------------  */
+/* element width (this is a class) START */
+.oneh {max-width: 100px;}
+.twoh {max-width: 200px;}
+.threeh {max-width: 300px;}
+.fourh {max-width: 400px;}
+.fiveh {max-width: 500px;}
+.sixh {max-width: 600px;}
+.sevenh {max-width: 700px;}
+/* element width END */
+/* ----------------------------------------------------------------------  */
+
+/* superscript START */
+sup {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+/* superscript END */
+/* ----------------------------------------------------------------------  */
+
+/*  */
+/*  */

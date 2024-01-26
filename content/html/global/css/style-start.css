@@ -1,0 +1,105 @@
+html {
+  /* test for logo not showing up 2023-07-27 9am */
+}
+
+body{
+    background-color: rgb(29, 28, 39);
+    color: rgb(255, 255, 255);
+    max-width: 95vw;
+    margin-left: 2vw;
+    margin-right: 2vw
+    margin-top: 2px;
+    margin-bottom: 10px;
+
+  }
+
+
+
+/* a tag START */
+a:link, :visited {color: rgb(26, 30, 250);
+
+}
+
+a:hover {
+    color: rgb(250, 26, 64);
+    text-decoration: underline;
+    background-color: rgba(35, 35, 160, 0.5);
+  }
+  
+  a:active {
+    color: rgb(221, 231, 74);
+    text-decoration: underline;
+  }
+/* a tag END */
+
+
+
+
+/* background for link text START */
+
+.linkl {
+  margin-top: 0px;
+  border-radius: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(228, 148, 43);
+  display: inline-block;
+  font-size: 6vw;
+  background-color: rgb(197, 130, 30);
+  border-style: inset;
+}
+.linkm {
+  margin-top: 0px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(23, 233, 86);
+  display: inline-block;
+  font-size: 6vw;
+  background-color: rgb(20, 197, 138);
+  border-style: inset;
+}
+
+/* background for link text END */
+
+/* --------------------------------------------------------------- */
+
+/* start page container START  */
+
+
+
+/* --------------------------------------------------------------- */
+
+/* start page grid */
+.startpage-img {
+  width: 95%;
+  border-radius: 20px;
+}
+.startpage-chia-img {
+  border-style: outset;
+  border-width: 3px;
+  border-color: aqua;
+}
+
+.item1 { grid-area: top; }
+.item2 { grid-area: left; }
+.item3 { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'left right';
+  gap: 10px;
+  background-color: rgba(68, 68, 143, 0.3);
+  padding: 15px;
+  border-style: inset;
+  border-radius: 20px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
