@@ -7,5 +7,6 @@
         "Tradingview",
         "unparallel"
     ],
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "livePreview.defaultPreviewPath": "/content/html/dark/repo/index.html"
 }

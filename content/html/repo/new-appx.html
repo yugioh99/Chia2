@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>level 1</title>
+		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="../css/style-small.css">
+		<link rel="stylesheet" media="screen and (min-width: 1001px)" href="../css/style-big.css">
+		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="../css/nav-small.css">
+		<link rel="stylesheet" media="screen and (min-width: 1001px)" href="../css/nav-big.css">
+		<script type="text/javascript" src="../../global/js/nav.js"></script>
+		<link rel="shortcut icon" href="../../../img/icons/ptc-mini.png" type="image/x-icon">
+	</head>
+
+	<body>
+
+
+<header>
+<nav> <!-- l=location, bm=bookmark, al=appx links, th=theme for css and js  -->
+<ul>
+	<li><div class="ldropdown"><!-- l=location  -->
+		<img src="../../../img/icons/navigation.png" alt="" class="img-navbar" onclick="lmyFunction()">
+		<div id="lmyDropdown" class="ldropdown-content"> 		
+		  <a href="../home.html"><img src="../../../img/icons/home.png" alt="" class="img-navbar-location">Home</a>
+		  <a href="../um/index.html"><img src="../../../img/icons/user-manual.jpg" alt="" class="img-navbar-location">User Manual</a>
+		  <a href="../ptc/index.html"><img src="../../../img/icons/ptc-mini.png" alt="" class="img-navbar-location">PTC</a>
+		  <a href="../res/index.html"><img src="../../../img/icons/resources.png" alt="" class="img-navbar-location">Resources</a>
+		  <a href="../appx/index.html"><img src="../../../img/icons/appendix.png" alt="" class="img-navbar-location">Appendix</a>
+		  <a href="../repo/index.html"><img src="../../../img/icons/repository-mini.png" alt="" class="img-navbar-location">Repository</a>
+		  
+			
+		  <img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
+
+			
+		  
+		<!-- template for level 1
+		<img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
+		-->
+
+		</div>
+	  </div>
+	</li>
+	<li><div class="bmdropdown"><!-- bm=bookmark --><!--
+		<button onclick="bmmyFunction()" class="bmdropbtn">Level 1</button> -->
+		<img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmmyFunction()">
+		<div id="bmmyDropdown2" class="bmdropdown-content2">
+			<input type="text" placeholder="Search.." id="bmmyInput" onkeyup="bmfilterFunction()">
+		</div>
+		<div id="bmmyDropdown" class="bmdropdown-content"> 
+		  Bookmarks 
+		  <img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmmyFunction()">
+		  <a href="#head">head</a>
+		  <a href="#header">header</a>
+		  <a href="#blog">langrangian coherent structure (LCS)</a>
+		  <a href="#contact">Contact</a>
+		  <a href="#custom">Custom</a>
+		  <a href="#support">Support</a>
+		  <a href="#tools">Tools</a>
+		</div>
+	  </div>
+	</li> 
+	<li><div class="aldropdown"><!-- al=appx links  -->
+		<img src="../../../img/icons/appendix.png" alt=""  class="img-navbar aldropbtn" onclick="almyFunction()">
+		<div id="almyDropdown2" class="aldropdown-content2">
+			<input type="text" placeholder="Search.." id="almyInput" onkeyup="alfilterFunction()">
+		</div>
+		<div id="almyDropdown" class="aldropdown-content">
+		  Appendix links 	
+		  <img src="../../../img/icons/appendix.png" alt=""  class="img-navbar aldropbtn" onclick="almyFunction()">	
+		  <a href="#head">head</a>
+		  <a href="#header">header</a>
+		  <a href="#blog">Blog</a>
+		  <a href="#contact">Contact</a>
+		  <a href="#custom">Custom</a>
+		  <a href="#support">Support</a>
+		  <a href="#tools">Tools</a>
+		</div>
+	  </div>
+	</li>
+	<li><div class="thdropdown"><!-- th=theme -->
+		<img src="../../../img/icons/theme.png" alt="" class="img-navbar" onclick="thmyFunction()">
+		<div id="thmyDropdown" class="thdropdown-content">
+		  Change Layout 		
+		  <img src="../../../img/icons/theme.png" alt="" class="img-navbar" onclick="thmyFunction()">
+		  <a href="../../dark/repo/index.html">Dark</a>
+		  <a href="../../light/repo/index.html">Light</a>
+		</div>
+	  </div>
+	</li>
+	<li></li>
+</ul>
+</nav>	
+</header>
+
+
+
+<main>
+	
+<h1><img src="../../../img/icons/repository-mini.png" class="img-noborder-icon" alt="image here"> Level 1 - new index</h1><hr>
+
+<section id="head">
+head<br><br> <a href="index.html">old index</a>
+
+</section>
+
+
+<section id="header">
+	<h1>test for header</h1>
+header<br><p>
+<a href="header/header.html">header</a> basic header<br>
+<a href="header/abc.html">ABC</a> bookmarks in alphabetical order<br>
+<a href="header/search.html">Search</a> searchable bookmarks<br>
+<a href="header/tag.html">Tag</a> bookmarks grouped by tag<br></p>
+</section>
+
+
+<section id="main">
+main<br>
+<a href=""></a>
+<a href="section/section.html">section</a> basic section
+<br><a href="appendix-test.html">appendix test</a>
+</section>
+
+
+<section id="footer">
+footer<br>
+</section>
+
+
+<section id="appendix">
+appendix<br>
+</section>
+
+
+
+
+</main>
+
+<br>
+
+
+
+<footer id="footnotes">
+
+<h1><img class="img-noborder-icon" src="../../../img/icons/footnotes.png" alt="footnotes"> Footnotes</h1><hr>
+
+
+<article id="a"><p> a. <u>To Do List</u>: 
+	<br><a href="#a1">a1</a> Do the repo page.
+	 </p>
+
+</article>
+
+
+<article id="b"><p> a. trend line:</p> 
+	<p>this page: <a href="#a1">a1</a></p>
+	<p>appendix: what</p>
+
+</article>
+
+<article>
+	<!-- container-appx-top START -->
+	<div class="container-appx-top">
+		ds
+
+	</div> <!-- container-appx-top END -->
+</article>
+
+
+</footer>
+
+	</body>
+
+	
+</html>

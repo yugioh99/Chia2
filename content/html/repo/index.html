@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" id="root">
+<head>
+	<!--  Essential META Tags -->
+	<meta charset="UTF-8">
+	<title>level 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:title" content="Price Time Continuum">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="hard http link to image">
+	<meta property="og:url" content="hard link to main url">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="description" content="Conceptualize the lattice of price-time as analogous to space-time.">
+	<meta property="og:description" content="Conceptualize the lattice of price-time as analogous to space-time.">
+	<meta property="og:site_name" content="PTC">
+	<meta name="twitter:image:alt" content="Price Time Continuum">
+	<!--  CSS, Javascript, favicon -->
+	<link rel="stylesheet" media="screen and (max-width: 1000px)" href="../css/style-small.css">
+	<link rel="stylesheet" media="screen and (min-width: 1001px)" href="../css/style-big.css">
+	<script type="text/javascript" src="../../global/js/nav.js" async></script>
+	<link rel="shortcut icon" href="../../../img/icons/ptc-mini.png" type="image/x-icon">
+</head>
+
+	<body id="theme">
+
+
+<header>
+<nav> <!-- l=location, bm=bookmark, al=appx links, th=settings for css and js  -->
+<ul>
+	<li><div class="ldropdown"><!-- l=location  -->
+		<img src="../../../img/icons/navigation.png" alt="" class="img-navbar" onclick="lmyFunction()">
+		<div id="lmyDropdown" class="ldropdown-content"> 		
+		  <a href="../home.html"><img src="../../../img/icons/home.png" alt="" class="img-navbar-location">Home</a>
+		  <a href="../um/index.html"><img src="../../../img/icons/user-manual.jpg" alt="" class="img-navbar-location">User Manual</a>
+		  <a href="../ptc/index.html"><img src="../../../img/icons/ptc-mini.png" alt="" class="img-navbar-location">PTC</a>
+		  <a href="../res/index.html"><img src="../../../img/icons/resources.png" alt="" class="img-navbar-location">Resources</a>
+		  <a href="../appx/index.html"><img src="../../../img/icons/appendix.png" alt="" class="img-navbar-location">Appendix</a>
+		  <a href="../repo/index.html"><img src="../../../img/icons/repository-mini.png" alt="" class="img-navbar-location">Repository</a>
+		  
+			
+		  <img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
+
+			
+		  
+		<!-- template for level 1
+		<img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
+		-->
+
+		</div>
+	  </div>
+	</li>
+	<li><div class="bmdropdown"><!-- bm=bookmark --><!--
+		<button onclick="bmmyFunction()" class="bmdropbtn">Level 1</button> -->
+		<img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmmyFunction()">
+		<div id="bmmyDropdown2" class="bmdropdown-content2">
+			<input type="text" placeholder="Search.." id="bmmyInput" onkeyup="bmfilterFunction()">
+		</div>
+		<div id="bmmyDropdown" class="bmdropdown-content"> 
+		  Bookmarks 
+		  <img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmmyFunction()">
+		  <a href="#headsec">head</a>
+		  <a href="#headersec">header</a>
+		  <a href="#blog">langrangian coherent structure (LCS)</a>
+		  <a href="#contact">Contact</a>
+		  <a href="#custom">Custom</a>
+		  <a href="#support">Support</a>
+		  <a href="#tools">Tools</a>
+		</div>
+	  </div>
+	</li> 
+	<li><div class="aldropdown"><!-- al=appx links  -->
+		<img src="../../../img/icons/appendix.png" alt=""  class="img-navbar aldropbtn" onclick="almyFunction()">
+		<div id="almyDropdown2" class="aldropdown-content2">
+			<input type="text" placeholder="Search.." id="almyInput" onkeyup="alfilterFunction()">
+		</div>
+		<div id="almyDropdown" class="aldropdown-content">
+		  Appendix links 	
+		  <img src="../../../img/icons/appendix.png" alt=""  class="img-navbar aldropbtn" onclick="almyFunction()">	
+		  
+		  <a onclick="opexam()">example</a>
+		  <a onclick="oppitc()">pitchfork</a>
+		</div>
+	  </div>
+	</li>
+	<li><div class="thdropdown"><!-- th=theme = settings -->
+		<img src="../../../img/icons/theme.png" alt="" class="img-navbar" onclick="thmyFunction()">
+		<!--
+		<div id="thmyDropdown" class="thdropdown-content">
+		  -->
+			
+			<div id="thmyDropdown" class="thdropdown-content">
+	
+				<div class="settings-top1">Settings <img src="../../../img/icons/theme.png"  alt="" class="img-navbar" onclick="thmyFunction()"></div>
+			
+				<div class="settings-top2">
+					Text size
+<button type="button" onclick="changefont1()">1</button>
+<button type="button" onclick="changefont2()">2</button>
+<button type="button" onclick="changefont3()">3</button>
+<button type="button" onclick="changefont4()">4</button>
+<button type="button" onclick="changefont5()">5</button>
+<button type="button" onclick="changefont6()">6</button>
+<button type="button" onclick="changefont7()">7</button>
+<button type="button" onclick="changefont8()">8</button>
+<button type="button" onclick="changefont9()">9</button>
+				</div>
+				
+				<div class="settings-left">Laptop<br><br><a href="../../dark/repo/index.html">Dark Theme</a><br><br><a href="../../light/repo/index.html">Light Theme</a></div>
+			
+				<div class="settings-right">Mobile<br><br><a href="../../dark-mobile/repo/index.html">Dark Theme</a><br><br><a href="../../light-mobile/repo/index.html">Light Theme</a></div>  
+			</div>
+
+		</div>
+	  </div>
+	</li>
+	<li></li>
+</ul>
+</nav>	
+</header>
+<div class="ttgroup"><!-- ttgroup START -->
+	<div id="ttexam" class="ttdiv" onmouseleave="clexam()"><!-- entry START -->
+	  <img  src="../../../img/icons/strategy.png" alt="">
+	  <h2><a href="">Example</a></h2>
+	  <p id="gexam"></p>
+	</div><!-- entry END -->
+	<div id="ttpitc" class="ttdiv" onmouseleave="clpitc()"><!-- entry START -->
+		<img  src="../../../img/tooltips/pitchforktt1.png" alt="">
+		<h2><a href="">Pitchfork</a></h2>
+		<p id="gpitc"></p>
+	  </div><!-- entry END -->
+  
+</div><!-- ttgroup END -->
+
+
+<main><!-- Main  ----------------------------   -->
+	
+<h1><img src="../../../img/icons/repository-mini.png" class="img-noborder-icon" alt="image here"> Level 1 - new index</h1><hr>
+
+<section id="headsec">
+head<br><br> <a href="index.html">old index</a><br> <br>
+<a href="index2.html">new test index2</a><br> <br>
+<button class="ttbtn" onclick="opexam()">example</button><br>
+
+
+
+
+
+</section>
+
+
+<section id="headersec">
+	<h2>test for header</h2>
+header<br><p>
+<a href="header/header.html">header</a> basic header<br>
+<a href="header/abc.html">ABC</a> bookmarks in alphabetical order<br>
+<a href="header/search.html">Search</a> searchable bookmarks<br>
+<a href="header/tag.html">Tag</a> bookmarks grouped by tag<br></p>
+</section>
+
+
+<section id="mainsec">
+main<br>
+<a href=""></a>
+<a href="section/section.html">section</a> basic section
+<br><a href="appendix-test.html">appendix test</a>
+</section>
+
+
+<section id="textsizesec" style="border-color: green;">
+could make a green class for appendix sections <br><br>
+
+Settings text size<br>
+<!-- This is how they choose their font size -->
+<select onchange="fontSize(this);" size="1" style="font-size: 20px;">
+  <option>0.6rem</option>
+  <option>0.8rem</option>
+  <option>1rem</option>
+  <option>1.2rem</option>
+  <option>1.4rem</option>
+  <option>1.6rem</option>
+  <option>1.8rem</option>
+  <option>2rem</option>
+  <option>2.5rem</option>
+  <option>3rem</option>
+  <option>4rem</option>
+</select>
+<br>
+<!-- this is how i would save it since they don't physically click a button -->
+<input type="button" id="save" value="Save Font Size" style="font-size: 20px;">
+  
+<br><br>
+
+test 2rem /
+<span style="font-size: 2rem;">real 2rem</span>
+/
+<span style="font-size: 32px;">32px</span>
+/
+<span style="font-size: 16px;">16px</span> /
+<span style="font-size: 1rem;">real 1rem</span>
+<br> test background color<br>
+<div style="background-color: inherit;">inherit</div>
+<div style="background-color: transparent;">transparent</div>
+<div style="background-color: inherit;">inherit</div>
+</section>
+
+
+<section id="themesec">
+theme color
+</section>
+
+
+
+
+</main>
+
+<br>
+
+
+
+<footer id="footnotes">
+
+<h1><img class="img-noborder-icon" src="../../../img/icons/footnotes.png" alt="footnotes"> Footnotes</h1><hr>
+
+
+<article id="a"><p> a. <u>To Do List</u>: 
+	<br><a href="#a1">a1</a> Do the repo page.
+	 </p>
+
+</article>
+
+
+<article id="b"><p> a. trend line:</p> 
+	<p>this page: <a href="#a1">a1</a></p>
+	<p>appendix: what</p>
+
+</article>
+
+<article>
+	<!-- container-appx-top START -->
+	<div class="container-appx-top">
+		ds
+
+	</div> <!-- container-appx-top END -->
+</article>
+
+
+</footer>
+
+
+<!-- better to load these js at the bottom -->
+<script type="text/javascript" src="../../global/js/tooltip.js" async></script>
+<script type="text/javascript" src="../../global/js/settings.js" async></script>
+<script type="text/javascript" src="../../global/js/glossary.js" async></script>
+	</body>
+
+	
+</html>

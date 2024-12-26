@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html  style="font-size: 1rem;"
+id="root">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Bin</title>
+</head>
+<body style="background-color: black; color: white;">
+  Hello world!<br>
+  <!-- This is how they choose their font size -->
+  <select onchange="fontSize(this);" size="1" style="font-size: 20px;">
+    <option>0.6rem</option>
+    <option>0.8rem</option>
+    <option>1rem</option>
+    <option>1.2rem</option>
+    <option>1.4rem</option>
+    <option>1.6rem</option>
+    <option>1.8rem</option>
+    <option>2rem</option>
+    <option>2.5rem</option>
+    <option>3rem</option>
+    <option>4rem</option>
+  </select>
+  <br>
+  <!-- this is how i would save it since they don't physically click a button -->
+  <input type="button" id="save" value="Save Font Size" style="font-size: 20px;">
+    
+<br><br>
+
+  test 2rem /
+  <span style="font-size: 2rem;">real 2rem</span>
+  /
+  <span style="font-size: 32px;">32px</span>
+  /
+  <span style="font-size: 16px;">16px</span> /
+  <span style="font-size: 1rem;">real 1rem</span>
+        
+        <!-- The body tag is has an 'id="text' "-->
+
+        
+<script>
+  
+/* The code that actually changes the font size */
+
+var selectedSize = '';
+
+function fontSize(selectTag) {
+  var listValue = selectTag.options[selectTag.selectedIndex].text;
+  selectedSize = listValue;
+  setFontSize(listValue);
+}
+
+function setFontSize(value) {
+  document.querySelector("#root").style.fontSize = value;
+}
+
+function saveFont(){
+  localStorage.setItem('fontSize', selectedSize);
+}
+
+var button = document.querySelector('#save');
+button.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  saveFont();
+}, false);
+
+if(localStorage.getItem('fontSize')) {
+  var storedSize = localStorage.getItem('fontSize');
+  setFontSize(storedSize);
+}
+</script>
+</body>
+</html>

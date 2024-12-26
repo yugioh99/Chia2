@@ -1,0 +1,834 @@
+
+
+/* dark style-small.css 16px */
+
+
+
+
+html {
+  font-size: 1rem; 
+  
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------
+body START */
+body{
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+}
+/* body END */
+
+
+/* ----------------------------------------------------------------------  */
+/*  header */
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 15vw;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  display: flex; 
+  align-items: right;
+  box-shadow: 0 0 25px 0 black;
+  }
+  
+  header * {
+    display: inline;
+    }
+
+  header li {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  }
+
+/* header END */
+
+
+
+/* -------------------------------------------------------------------------------------------
+nav img START */
+
+
+/*  img nav bar
+dont use rem */
+.img-navbar {
+  height: 48px;
+  cursor: pointer;
+}
+.img-navbar:hover, .img-navbar:focus {
+ background-color: aqua;
+ transform: rotate(90deg);
+}
+
+/* little is for the nav img in the 
+location section. A little bigger
+than location img */
+.img-navbar-little {
+  height: 30px;
+  cursor: pointer;
+}
+
+.img-navbar-little:hover, .img-navbar:focus {
+  background-color: aqua;
+  transform: rotate(90deg);
+ }
+
+.img-navbar-location {
+  height: 24px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------
+nav img  END */
+
+
+/* -------------------------------------------------------------------------------------------
+nav Locations START */
+
+
+/* Dropdown Button 
+
+
+
+  /* The search field */
+
+  
+  /* The search field when it gets focus/clicked on */
+
+  /* The container <div> - needed to position the dropdown content */
+  .ldropdown {
+    position: relative;
+    display: inline;
+  }
+
+  
+  /* Dropdown Content (Hidden by Default) */
+  .ldropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    left: 0px;
+    background-color: #d4d0d0;
+    color: rgb(0, 0, 0);
+    min-width: 250px;
+    max-height: 70vh;
+    font-size: 18px;
+    resize: both;
+    border: 3px solid #c7760c;
+    z-index: 2;
+    overflow: auto;
+  }
+
+
+
+  /* Links inside the dropdown */
+  .ldropdown-content a {
+    color: rgb(25, 21, 230);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .ldropdown-content a:hover {background-color: #eeb79e}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .lshow {display:block;}
+
+  /* -------------------------------------------------------------------------------------------
+nav Locations END */
+
+/* -------------------------------------------------------------------------------------------
+nav themes = settings START */
+
+/* Dropdown Button 
+
+
+
+  /* The search field */
+
+  
+  /* The search field when it gets focus/clicked on */
+
+  /* The container <div> - needed to position the dropdown content */
+  .thdropdown {
+    position: relative;
+    display: inline;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  /*
+  .thdropdown-content { */
+
+    .settings-top1 { grid-area: top1; }
+    .settings-top2 { grid-area: top2; }
+    .settings-left { grid-area: left; }
+    .settings-right { grid-area: right; }
+    
+    .thdropdown-content {
+      display: none;
+      min-width: 250px;
+      max-height: 70vh;
+      resize: both;
+      overflow: auto;
+      
+      
+      grid-template-areas:
+        'top1 top1'
+        'top2 top2'
+        'left right';
+      gap: 10px;
+      background-color: rgb(68, 68, 143);
+      padding: 5px;
+      border-style: inset;
+      border-radius: 5px;
+    }
+    
+    .thdropdown-content > div {
+      background-color: rgb(212, 212, 212);
+      text-align: center;
+      padding: 5px 5px;
+      font-size: 18px;
+      color: black;
+
+    }
+
+    /* Links inside the dropdown */
+
+  
+    .thdropdown-content a {
+      color: rgb(25, 21, 230); 
+      padding: 12px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline;
+    }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .thshow {display:grid;}
+
+
+/* -------------------------------------------------------------------------------------------
+nav themes = settings END */
+
+/* -------------------------------------------------------------------------------------------
+nav bookmarks START */
+
+
+/* The search field */
+#bmmyInput {
+  box-sizing: border-box;
+  width: 150px;
+  background-image: url('../../../img/icons/searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#bmmyInput:focus {outline: 3px solid #1b1392;}
+
+/* The container <div> - needed to position the dropdown content */
+.bmdropdown {
+  position: relative;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.bmdropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  left: 0px;
+  background-color: #eaeaf7;
+  color: rgb(121, 43, 43);
+  min-width: 150px;
+  max-height: 70vh;
+  font-size: 18px;
+  resize: both;
+  border: 3px solid #2f1b9e;
+  z-index: 1;
+  overflow: auto;
+}
+.bmdropdown-content2 {
+  display: none;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 5, 156, 0.5);
+  color: rgb(121, 43, 43);
+  min-width: 150px;
+  max-height: 70vh;
+  font-size: 16px;
+  border: 3px solid #2f1b9e;
+  z-index: 1;
+  overflow: auto;
+}
+
+
+/* Links inside the dropdown */
+.bmdropdown-content a {
+  color: rgb(25, 21, 230);
+  padding: 10px 5px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.bmdropdown-content a:hover {background-color: #9b9cdf}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.bmshow {display:block;}
+
+/* -------------------------------------------------------------------------------------------
+nav bookmarks END */
+
+
+
+/* -------------------------------------------------------------------------------------------
+nav appx links START */
+
+/* Dropdown Button 
+
+
+
+  /* The search field */
+  #almyInput {
+    box-sizing: border-box;
+    width: 150px;
+    background-image: url('../../../img/icons/searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #almyInput:focus {outline: 3px solid #82d46e;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .aldropdown {
+    position: relative;
+    display: inline;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .aldropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    left: 0px;
+    background-color: #eeeeee;
+    color: rgb(18, 70, 11);
+    min-width: 150px;
+    max-height: 70vh;
+    font-size: 1.3rem;
+    resize: both;
+    border: 2px solid #14e66b;
+    z-index: 1;
+    overflow: auto;
+  }
+  .aldropdown-content2 {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    left: 0px;
+    background-color: #eeeeee;
+    color: rgb(18, 70, 11);
+    min-width: 150px;
+    max-height: 70vh;
+    font-size: 16px;
+    border: 2px solid #14e66b;
+    z-index: 1;
+    overflow: auto;
+  } 
+
+
+  /* Links inside the dropdown */
+  .aldropdown-content a {
+    color: rgb(25, 21, 230);
+    padding: 10px 5px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .aldropdown-content a:hover {
+    background-color: #87d6b8;
+    cursor: pointer;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .alshow {display:block;}
+
+/* -------------------------------------------------------------------------------------------
+nav appx links END */
+
+
+
+
+
+/* ----------------------------------------------------------------------  */
+
+/* main, section and footer, article START */
+
+main {
+  font-size: 1.6rem;
+  
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-color: rgb(55, 55, 55);
+  border-radius: 10px;
+}
+
+
+footer {
+  font-size: 1.6rem;
+  
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  background-color: rgb(70, 70, 70);
+
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: rgb(38, 60, 184);
+  border-style: outset;
+
+}
+
+
+
+section {
+  font-size: 1.6rem;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  background-color: rgb(24, 24, 24);
+ 
+  border-radius: 10px;
+  border-color: rgb(121, 45, 45);
+  border-style: solid;
+  border-width: 3px;
+
+}
+
+
+article {
+  font-size: 1.6rem;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+  background-color: rgb(30, 30, 30);
+ 
+  border-radius: 10px;
+  border-color: rgb(54, 77, 141);
+  border-style: solid;
+  border-width: 3px;
+
+}
+
+
+/* main, section and footer, article END */
+
+/* ---------------------------------------------------------------------- 
+tooltips START */
+
+/* tooltips group container */
+.ttgroup{
+  position: fixed;
+  display: inline-block;
+  max-width: 1px; 
+  max-height: 1px;
+}
+
+/* tooltips div */
+.ttdiv {
+  min-width: 80vw;
+  max-width: 80vw;
+  max-height: 70vh;
+  padding: 5px 0px;
+  text-align: start;
+  vertical-align: top;
+  color: rgb(255, 255, 255);
+  background-color: rgb(34, 34, 34);
+  margin: 0px 0px;
+  display: none; 
+  position: absolute;
+  left: 10px;
+  border-width: 2px;
+  border-color: rgb(14, 112, 39);
+  border-style: solid;
+  overflow-y: auto;
+  
+
+}
+/* tooltips link, h2, p, img, button */
+.ttdiv a {
+  color: rgb(63, 63, 226);
+  background-color: black;
+  padding: 2px 2px;
+  
+}
+
+.ttdiv h2 {
+  color: inherit;
+  background-color: transparent;
+  text-align: center;
+}
+.ttdiv p {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-width: 2px;
+  border-color: green;
+  border-style: solid;
+}
+.ttdiv img {
+  float: right; 
+  max-width: 40vw; 
+  max-height: 60vh; 
+  background-color: rgb(13, 51, 29);
+
+}
+.ttbtn {
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.ttbtn:hover {background-color: rgba(28, 141, 71, 0.3);}
+
+/* ---------------------------------------------------------------------- 
+tooltips END */
+
+
+
+/* div and p containers START */
+
+/* top of home page  */
+.home-top-container {
+
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  border: hidden;
+  
+}
+.home-top-left {
+  display: inline-block;
+  text-align: center;
+  vertical-align: 60px;
+  font-size: 70px;
+  min-width: 50%;
+}
+
+
+.home-top-right {
+  display: inline-block;
+  background-color: rgb(72, 136, 233);
+  
+  text-align: center;
+  font-size: 25px;
+  
+  padding: 0px;
+  border-radius: 30px;
+  border-width: 10px;
+  border-style: outset;
+  border-color: rgb(78, 94, 235);
+}
+
+.home-top-right:hover {
+  background-color: rgb(40, 173, 62);
+}
+
+.home-top-settings-img {
+  max-width: 170px;
+}
+
+/* text under theme on home page  */
+.htr
+{
+  color: black;
+  text-decoration: underline
+}
+
+/*  div home page */
+.hpdiv-container {
+
+ 
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  border: none;
+  border-spacing: 50px 0px;
+  
+}
+
+.hpdiv-left {
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+.hpdiv-right {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  font-size: 22px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+div containers and div  START */
+
+/*  container to put in article for appx  */
+
+.container-appx-top {
+
+  display: block;
+  align-items: normal;
+  max-width: 100%;
+border-width: 5px;
+border-color: rgb(233, 164, 37);
+border: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+/* div for appx */
+
+.div-appx {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 30%;
+  font-size: 1.6rem;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-width: 3px;
+  border-color: rgb(31, 195, 201);
+  border-style: outset;
+  border-radius: 5px;
+
+  
+}
+
+/* header for appendix div */
+
+.title-appx {
+  text-align: center;
+  background-color: rgb(4, 71, 71);
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+div containers and div  END */
+
+
+/* paragraph */
+p {
+  margin-top: 0px;
+  margin-bottom: 0px
+
+
+
+
+}
+
+
+
+/* div and p containers END */
+
+/* ----------------------------------------------------------------------  */
+
+/* standardized img sizes START */
+
+
+/* blue border no background width */
+
+.img-blue2 {
+  width: 200px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+.img-blue3 {
+  width: 300px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+.img-blue-icon {
+  height: 40px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(71, 92, 161);
+}
+
+
+/* brown border no background */
+
+.img-brown2 {
+  width: 200px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+.img-brown3 {
+  width: 300px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+.img-brown-icon {
+  height: 40px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: outset;
+  border-color: rgb(155, 92, 34);
+}
+
+/* img no border no fill */
+.img-noborder2 { width: 200px;}
+.img-noborder3 {width: 300px;}
+.img-noborder-icon {height: 40px;}
+
+
+
+/* nav img are in nav-small.css */
+
+/* standardized img sizes END */
+
+/* ----------------------------------------------------------------------  */
+
+
+
+
+/* ----------------------------------------------------------------------  */
+
+/* table START */
+th{
+  background-color: rgb(116, 91, 91);
+  
+}
+/* table END */
+
+
+/* ----------------------------------------------------------------------  */
+
+/* link START */
+a:link {color: rgb(90, 90, 255)}
+a:visited{color: rgb(180, 127, 233);}
+a:hover {
+    color: rgb(0, 0, 145);
+    background-color: rgb(172, 172, 172);
+    text-decoration: underline;
+  }
+  
+a:active {
+    color: blue;
+    background-color: rgb(50, 50, 50);
+    text-decoration: underline;
+  }
+
+/* link END */
+/* ----------------------------------------------------------------------  */
+/* element width (this is a class) START */
+.oneh {max-width: 100px;}
+.twoh {max-width: 200px;}
+.threeh {max-width: 300px;}
+.fourh {max-width: 400px;}
+.fiveh {max-width: 500px;}
+.sixh {max-width: 600px;}
+.sevenh {max-width: 700px;}
+/* element width END */
+/* ----------------------------------------------------------------------  */
+
+/* superscript START */
+sup {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+/* superscript END */
+/* ----------------------------------------------------------------------  */
+
+/*  */
+/*  */

@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+
+function theDomHasLoaded(e) {
+    /* get glossery text content */
+}
+
+https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm
+
+
+
+
+Down bottom is from google ai, dont use this
+
+
+document.addEventListener("DOMContentLoaded", glossary() {
+  // Your code here will run once the DOM has loaded.
+});

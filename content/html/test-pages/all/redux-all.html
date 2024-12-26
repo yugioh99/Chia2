@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" id="root">
+<head>
+	<!--  Essentials -->
+	<meta charset="UTF-8">
+	<title>level 1 edit 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css-redux/style3.css">
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:title" content="Shadi Trading Systems">
+	<meta property="og:type" content="website">
+	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time.">
+	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time.">
+	<meta property="og:site_name" content="STS">
+	<meta name="twitter:image:alt" content="Shadi Trading Systems">
+	<!--  Javascript, favicon -->
+	<script type="text/javascript" src="../js-redux/core.js" defer></script>
+	<script type="text/javascript" src="../js-redux/glossary3.js" defer></script>
+	<link rel="shortcut icon" href="../../img/icons/ptc-mini.png" type="image/x-icon">
+	
+</head>
+
+	<body class="pageBg pageTx">
+
+
+<header>
+<nav  aria-label="Main menu"> <!-- l=location, bm=bookmark, al=appx links, s=settings for css and js  -->
+<ul>
+	<li><div class="lddcontainer"><!-- l=location  -->
+		<button aria-expanded="false" onclick="tdb('lddid')">Navigation</button>
+		<div id="lddid" class="lddcontent"> 		
+		  <a href="../home.html"><img src="../../../img/icons/home.png" alt="" class="img-navbar-location">Home</a>
+		  <a href="../um/index.html"><img src="../../../img/icons/user-manual.jpg" alt="" class="img-navbar-location">User Manual</a>
+		  <a href="../ptc/index.html"><img src="../../../img/icons/ptc-mini.png" alt="" class="img-navbar-location">PTC</a>
+		  <a href="../res/index.html"><img src="../../../img/icons/resources.png" alt="" class="img-navbar-location">Resources</a>
+		  <a href="../appx/index.html"><img src="../../../img/icons/appendix.png" alt="" class="img-navbar-location">Appendix</a>
+		  Level 1
+
+			
+		  
+		<!-- template for level 1
+		<img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
+		-->
+
+		</div>
+	  </div>
+	</li>
+	<li><div class="alddcontainer"><!-- al=appx links  -->
+		<button aria-expanded="false"  class=" aldropbtn" onclick="alddbtn()">Appx</button>
+		<div id="alddid2" class="alddcontent2">
+			<input type="text" placeholder="Search.." id="alInput" onkeyup="alfilter()">
+		</div>
+		<div id="alddid" class="alddcontent">
+		  Appendix links 	
+		  	
+		  
+		  <a onclick="tdb('ttexam')">example</a>
+		  <a onclick="tdb('ttpitc')">pitchfork</a>
+		</div>
+	  </div>
+	</li>
+	<li><div class="bmddcontainer"><!-- bm=bookmark --><!--
+		<button onclick="bmmyFunction()" class="bmdropbtn">Level 1</button> -->
+		<button aria-expanded="false"   class="bmdropbtn" onclick="bmddbtn()">Bookmarks</button>
+		<div id="bmddid2" class="bmddcontent2">
+			<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
+		</div>
+		<div id="bmddid" class="bmddcontent"> 
+		  Bookmarks 
+		  <img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmddbtn()">
+		  <a href="#todo">to-do</a>
+		  <a href="#headsec">head</a>
+		  <a href="#headersec">header</a>
+		  
+		</div>
+	  </div>
+	</li>
+	<li><div class="sddcontainer"><!-- th=theme = settings -->
+		<button aria-expanded="false" src="../../img/icons/theme.png"  onclick="sddbtn()">Settings</button>
+		<!--
+		<div id="thmyDropdown" class="thdropdown-content">
+		  -->
+			
+			<div id="sddid" class="sddcontent">
+	
+				<div class="settings-top1">Settings </div>
+			
+				<div role="option" class="settings-top2">
+			<!-- This is how they choose their font size -->
+			<select name="text size" onchange="fontSize(this);" size="1" style="font-size: 18px;">
+			<option value="">choose text size</option>
+			<option>calc(10px + 0.5vw)</option>
+			<option>calc(12px + 0.5vw)</option>
+			<option>calc(14px + 0.5vw)</option>
+			<option>calc(16px + 0.5vw)</option>
+			<option>calc(18px + 0.5vw)</option>
+			<option>calc(20px + 0.5vw)</option>
+			<option>calc(24px + 0.5vw)</option>
+			<option>calc(28px + 0.5vw)</option>
+			<option>calc(32px + 0.5vw)</option>
+ 			</select>
+ 		 <br>
+ 		 <!-- this is how i would save it since they don't physically click a button -->
+ 		 save text size
+ 		 <input type="button" id="save" value="save" style="font-size: 18px;" aria-label="save text size">
+				</div>
+				
+				<div class="settings-left">Dark Theme<br>
+					<button type="button" onclick="changeTxColor('#dddddd');">text</button><br>
+					<button type="button" onclick="changeBgColor('#1a1a1a');">background</button>
+				</div>
+			
+				<div class="settings-right">Light Theme<br>
+					<button type="button" onclick="changeTxColor('#000000');">text</button><br>
+					<button type="button" onclick="changeBgColor('#ffffff');">background</button>
+				</div>  
+			</div>
+
+		</div>
+	  </div>
+	</li>
+</ul>
+</nav>	
+</header>
+<div class="ttgroup"><!-- ttgroup START -->
+	
+	<div id="ttexam" class="ttdiv"><!-- entry START -->
+		<h2><a href="">Example</a></h2>
+		<p id="gexam"></p> 	
+		<a class="ttbtn-close" onclick="tdb('ttexam')">Close</a><br>
+		<img  src="../../img/background/2.jpg" alt="Example" >
+	</div><!-- entry END -->
+	
+  
+</div><!-- ttgroup END -->
+
+<main><!-- Main  ----------------------------   -->
+	
+	
+<h1><img src="../../../img/icons/repository-mini.png" class="img-noborder-icon" alt="image here"> Level 1 - new index</h1><hr>
+
+<section id="todo" class="pageBg">
+	<p>indexes<br>
+		<a href="index.html">index</a><br>
+		<a href="index2.html">index2</a><br>
+		<a href="index3.html">index3</a> <br>
+</p>
+</section>
+
+<section id="headsec" class="pageBg">
+head<br><br> <a href="index.html">old index</a><br> <br><!--
+<button class="ttbtn" onclick="opexamx()">example</button><br>-->
+<button class="ttbtn" onclick="tdb('ttexam')">example</button><br>
+<button class="ttbtn" onclick="tdb('ttpitc')">pitchfork</button><br><br>
+<br><br>
+<a class="ttbtn-open" onclick="tdb('ttexam')">Example</a><br>
+
+<img src="../../../img/icons/folder.png" style="max-width: 33vmin;" alt="">
+</section>
+
+
+<section id="headersec" class="pageBg">
+	<h2>test for header <a href="#headersec">#</a></h2>
+header<br><p>
+<a href="header/header.html">header</a> basic header<br>
+<a href="header/abc.html">ABC</a> bookmarks in alphabetical order<br>
+<a href="header/search.html">Search</a> searchable bookmarks<br>
+<a href="header/tag.html">Tag</a> bookmarks grouped by tag<br></p>
+</section>
+
+
+<section id="mainsec" class="pageBg">
+main<br>
+<a href=""></a>
+<a href="section/section.html">section</a> basic section
+<br><a href="appendix-test.html">appendix test</a>
+</section>
+
+
+<section id="textsizesec" style="border-color: green;" class="pageBg">
+<h2>Paragraphs</h2>
+<p>Check out p spacing.</p>
+<p>This is p number 2.</p>
+</section>
+
+
+
+
+</main>
+
+<br>
+
+
+
+<footer id="footnotes">
+
+<h1><img class="img-noborder-icon" src="../../../img/icons/footnotes.png" alt="footnotes"> Footnotes</h1><hr>
+
+
+<article id="a"><p> a. <u>To Do List</u>: 
+	<br><a href="#a1">a1</a> Do the repo page.
+	 </p>
+
+</article>
+
+
+<article id="b"><p> a. trend line:</p> 
+	<p>this page: <a href="#a1">a1</a></p>
+	<p>appendix: what</p>
+
+</article>
+
+<article>
+	<!-- container-appx-top START -->
+	<div class="container-appx-top">
+		ds
+
+	</div> <!-- container-appx-top END -->
+</article>
+
+
+</footer>
+
+
+<!-- better to load these js at the bottom -->
+	
+	</body>
+
+	
+</html>

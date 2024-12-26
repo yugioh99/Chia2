@@ -1,0 +1,8 @@
+
+use this function to run tooltip glossary popups after html has loaded. This don't wait for images to finish. 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Your JavaScript code goes here
+});
