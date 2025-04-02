@@ -1,0 +1,18 @@
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(54, 54, 54);
+    font-size: 32px;
+    color: rgb(214, 214, 214);
+}
+* {font-size: 32px;}
+
+#fontArial{font-family: Arial;}
+#fontTimes{font-family: 'Times New Roman';}
+#fontCalibri{font-family: Calibri;}
+#fontCursive{font-family: Cursive;}
+
+
+
+

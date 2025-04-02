@@ -3,7 +3,7 @@
 <head>
 	<!--  Essentials -->
 	<meta charset="UTF-8">
-	<title>STS Homepage</title>
+	<title>STS Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style1.css">
 	<!--  Non-Essential, But Recommended -->
@@ -16,6 +16,7 @@
 	<!--  Javascript, favicon -->
 	<script type="text/javascript" src="js/script1.js" defer></script>
 	<script type="text/javascript" src="js/glossary1.js" defer></script>
+	<script type="text/javascript" src="js/test-g.js" defer></script>
 	<link rel="shortcut icon" href="sts-mini.png" type="image/x-icon">
 </head>
 
@@ -24,18 +25,19 @@
 <header class="hcmain">
 <nav class="headernav"> <!-- headernav START   -->
 <div class="smallScreenTitle">STS</div>
-<div class="midScreenTitle">Shadi Trading Systems</div>
+<div class="midScreenTitle">STS - Template</div>
 <div class="lddcontainer lddsh"><!-- ldd = location drop down = navigation START  -->
 	<button class="navdropbtn menubtn">Navigation</button>
 	<div id="lddid" class="lddcontent pBdC"> 
 		Navigation <br>	
-		Home
+		<a href="home.html">Home</a>
+		Template
 	</div>
 </div><!-- navigation END -->
 <div class="bmddcontainer bmddsh"><!-- bm = bookmark START -->
 	<button  class="menubtn navdropbtn">Bookmarks</button>
 	<div id="bmddid2" class="bmddcontent2 pBdC">
-		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
+		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter();">
 	</div>
 	<div id="bmddid" class="bmddcontent pBdC"> 
 		Bookmarks 
@@ -45,12 +47,11 @@
 		<a onclick="goToBm2(); sp();">view #2</a>
 		Sections
 		<a href="#top">top</a>
-		<a href="#stsbm">STS</a>
-		<a href="#otherstuffbm">Other Stuff</a>
+		<a href="#sectitlebm">Section Title</a>
 		bottom
 	</div>
 </div><!-- bm = bookmark END -->
-<div class="wideScreenTitle">Shadi Trading Systems</div>
+<div class="wideScreenTitle">STS - Template</div>
 <div class="sddcontainer"><!-- settings START -->
 	<a href="settings.html" onclick="sp();"><button class="menubtn">Settings</button></a>
 </div><!-- settings END -->
@@ -80,17 +81,10 @@
 </div><!-- ttgroup END -->
 
 <main><!-- Main  ----------------------------   -->
-<div class="flexse"><!-- Home page Logo -->
-	<div class="flexcenter">
-		<div id="bigS" class="ball">
-			<span class="letter">S</span>
-		</div>
-	</div>
-	<div class="flexcenter">
-		<span class="hppageTitle pBgC"><span onclick="spin();" class="flpt">S</span>hadi <br> <span onclick="spin();" class="flpt">T</span>rading <br> <span onclick="spin();" class="flpt">S</span>ystems</span>
-	</div>
+<div class="pageTC"> <!-- Page Title -->
+	<div class="pageTitle pFF pFS pFC pBgC pBdC"><h1>Template</h1></div>
 </div>
-<!--   Section template. Don't use it, just make a copy.
+<!--   Section template. Don't use it, just make a copy.  -->
 <section id="sectitlebm" class="pFF pFS pFC pBgC pBdC"> section title (hide for notes)
 	<h2>Section Title<sup><a href="#sectitlebm">#</a></sup></h2>
 	<p> 
@@ -105,23 +99,8 @@
 	<br>
 	<a href="../img/background/1.jpg">view&nbsp;image</a> big image in same window <br>
 	<a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer">investopedia&nearr;</a> external link in new window
-</section>  -->
-<section id="stsbm" class="pFF pFS pFC pBgC pBdC"> <!-- sts -->
-	<h2>STS Categories<sup><a href="#stsbm">#</a></sup></h2>
-	<p>Shadi Trading Systems (STS)</p>
-<div class="cores">
-	<a href="../all/redux-all.html">Tools</a>
-	<a href="">Theories</a>
-	<a href="">Strategies</a>
-</div>
 </section>
-<section id="otherstuffbm" class="pFF pFS pFC pBgC pBdC"><!-- other stuff -->
-	<h2>Other Stuff<sup><a href="#otherstuffbm">#</a></sup></h2>
-	<a href="user-manual.html">User Manual</a>: How to use this website and STS. <br>
-	<a href="appendix.html" onclick="sp();">Appendix</a>: Glossary and Index <br>
-	<a href="updates.html">Updates</a>: Recent updates.<br>
-	<a href="template.html">Template</a>: Templates
-</section>
+
 </main>
 
 	</body>

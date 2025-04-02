@@ -1,0 +1,64 @@
+This is other page <br>
+<a href="home.html">Home</a> <br>
+<a href="set.html" onclick="sp();">Settings</a>
+
+
+<script>
+// window.addEventListener('DOMContentLoaded', () => sp());
+
+function sp() {
+  localStorage.setItem('savedPage', window.location.href);
+}
+</script>
+
+<!--
+document.getElementById('saveButton').addEventListener('click', saveCurrentPage);
+-->
+
+<br><br>
+<a href="#test" >test</a>
+<br><br>
+<!--
+<a onclick="sp();">Click here to save</a>-->
+<br>
+
+----------------------------- <br>
+<script>
+  function saveCurrentUrl() {
+    localStorage.setItem("currentUrl", window.location.href); 
+  }
+  
+  // Function to navigate to saved page when the 'go to saved page' button is clicked
+  function goToSavedBm() {
+    let savedBm = localStorage.getItem('currentUrl');
+    if (savedBm) {
+    window.location.href = savedBm;
+    } else {
+    // Handle case where no saved page exists (optional)
+    alert('No saved page found!');}
+  }
+  // Add event listener to 'go to saved page' button 
+  /*
+  document.getElementById('goBack').addEventListener('click', goToSavedPage);  */
+  </script>
+  
+  <button onclick="saveCurrentUrl();">save bm</button> <br>
+  <button onclick="goToSavedBm();">view bm</button>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  
+  <br><br><br>
+  
+  
+  
+  
+  <a id="test">test anchor</a>

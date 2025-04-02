@@ -1,0 +1,20 @@
+this is settings <br>
+<a href="home.html">Home</a>
+
+<br>
+<button onclick="goBack();">Go Back</button> <br>
+
+
+<script>
+// Function to navigate to saved page when the 'go to saved page' button is clicked
+function goBack() {
+  let savedUrl = localStorage.getItem('savedPage');
+  if (savedUrl) {
+  window.location.href = savedUrl;
+  } else {
+  // Handle case where no saved page exists (optional)
+  alert('No saved page found!');}
+}
+// Add event listener to 'go to saved page' button
+// document.getElementById('goBack').addEventListener('click', goToSavedPage);
+</script>

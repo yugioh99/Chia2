@@ -10,7 +10,7 @@ html {
 body{
     font-size: 1rem;
     line-height: 1.5;
-    background-image: url("../../../img/background/leopardprint.jpg");
+    background-image: url("../../img/background/leopardprint.jpg");
     color: rgb(221, 221, 221);
     width: 100%;
     margin: auto;
@@ -31,9 +31,8 @@ a:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration: 
 a:active {color: #ebff33; background-color: rgb(218, 140, 126); text-decoration: underline;}
 /* link END */
 
-/* header START */
+/* header */
 header {
-  background-color: #ffc0cb;
   position: fixed;
   font-size: 18px;
   line-height: normal;
@@ -45,9 +44,13 @@ header {
   header {
     left: 0px;
 }} 
-/* header END */
-
-/* headernav START */
+/* header colors main */
+.hcmain{ background-color: #ffc0cb; color: black;}
+/* header colors apx */
+.hcapx{ background-color: #800000; color: rgb(255, 255, 255);}
+/* header colors settings */
+.hcsettings{ background-color: #cfd2ff; color: black;}
+/* headernav */
 .headernav{
   display: flex;
   justify-content: flex-end;
@@ -57,7 +60,6 @@ header {
 .headernav {
   justify-content: flex-start;
 }} 
-/* headernav END */
 
 /* nav Locations START */
 
@@ -66,6 +68,8 @@ header {
     position: relative;
     display: inline;
   }
+  /* location dropdown show hide */
+  .lddsh:hover .lddcontent {display: block;}
   
   /* Dropdown Content (Hidden by Default) */
   .lddcontent {
@@ -75,12 +79,12 @@ header {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    left: -30px;
+    left: -60px;
     background-color: rgba(219, 219, 219, 1);
     color: rgb(0, 0, 0);
     line-height: 1.5;
     min-width: 160px;
-    max-height: 70vh;
+    max-height: 90vh;
     font-size: 20px;
     resize: both;
     border: 4px solid #ffc0cb;
@@ -114,7 +118,7 @@ header {
 #bmInput {
   box-sizing: border-box;
   width: 150px;
-  background-image: url('../../../img/icons/searchicon.png');
+  background-image: url('../../img/icons/searchicon.png');
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -131,6 +135,9 @@ header {
   position: relative;
   display: inline;
 }
+  /* location dropdown show hide */
+  .bmddsh:hover .bmddcontent {display: block;}
+  .bmddsh:hover .bmddcontent2 {display: block;}  
 
 /* Dropdown Content (Hidden by Default) */
 .bmddcontent {
@@ -140,7 +147,7 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  left: -20px;
+  left: -0px;
   background-color: #dddddd;
   color: rgb(0, 0, 0);
   line-height: 1.5;
@@ -168,7 +175,7 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  left: -20px;
+  left: -0px;
   background-color: rgba(23, 5, 156, 0.5);
   color: rgb(0, 0, 0);
   min-width: 150px;
@@ -231,9 +238,7 @@ header {
   border-radius: 5px;
   border-width: 10px;
   border-color: rgb(19, 19, 146);
-}
-
-    
+}  
 @media screen and (min-width: 1001px) {
 .sddcontent  {
   
@@ -252,11 +257,8 @@ header {
   background-color: #6458ff;
 }
 /* settings sub menu */
-.ssm{
-  background-color: rgb(226, 226, 226);
-  display: none;
-}
-
+.ssm{display: none;}
+.ssmc{background-color: rgb(226, 226, 226);}
 
 /* nav settings END */
 
@@ -267,28 +269,37 @@ header {
 }
 @media screen and (min-width: 1001px) {.navdropbtn {display: none;}}
   
-
-/* title in header in widescreen mode */
-.wideScreenTitle {
-  color: black; 
-  font-size: 20px; 
-  font-weight: bolder;
-  flex-grow: 1; 
-  display: inline-flex; 
-  justify-content: center;
-}
-@media screen and (max-width: 1000px) {.wideScreenTitle {display: none;}}
-
-/* title in header in widescreen mode */
+/* title in header in small screen mode */
 .smallScreenTitle {
-  color: black; 
   font-size: 20px; 
   font-weight: bolder;
   flex-grow: 1; 
   display: inline-flex; 
   justify-content: center;
 }
-@media screen and (min-width: 1001px) {.smallScreenTitle {display: none;}}
+@media screen and (min-width: 701px) {.smallScreenTitle {display: none;}}
+
+
+/* title in header in mid screen mode */
+.midScreenTitle {
+  font-size: 20px; 
+  font-weight: bolder;
+  flex-grow: 1; 
+  display: inline-flex; 
+  justify-content: center;
+}
+@media screen and (max-width:700px) {.midScreenTitle {display: none;}}
+@media screen and (min-width:1001px) {.midScreenTitle {display: none;}}
+
+/* title in header in wide screen mode */
+.wideScreenTitle {
+  font-size: 20px; 
+  font-weight: bolder;
+  flex-grow: 1; 
+  display: none; 
+  justify-content: center;
+}
+@media screen and (min-width: 1001px) {.wideScreenTitle {display: inline-flex;}}
 
 
 /* navigation, bookmarks and settings buttons in header */
@@ -298,9 +309,13 @@ header {
   border-width: 2px;
   border-radius: 3px;
   margin: 0px 2px;
+  cursor: pointer;
 }
-.menubtn:hover{border-color: aqua;}
-.menubtn:active{border-color: red;}
+.menubtn:hover{
+  border-color: aqua;
+  background-color: rgb(41, 41, 41);
+  color: #dddddd;
+}
 
 /* top menu in settings */
 .smenubtn{
@@ -310,6 +325,7 @@ header {
   border-width: 3px;
   border-radius: 15px;
   margin: 5px 2px;
+  cursor: pointer;
 }
 .smenubtn:hover{
   border-color: aqua;
@@ -330,13 +346,17 @@ header {
   border-width: 2px;
   border-radius: 10px;
   border-color: #333236;
+  cursor: pointer;
 }
 .settingsbtn:hover{
   border-color: aqua;
-  background-color: rgba(0, 255, 255, 0.1);
+  color: #dddddd;
+  background-color: rgb(41, 41, 41);
 }
 .settingsbtn:active{
   border-color: red;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.1);
   position:relative;
 	top:2px;
   left:2px;
@@ -400,12 +420,22 @@ main {
   padding: 0px 2px;
   border-radius: 10px;
 }
+.pageTC{
+  display: block;
+
+}
 .pageTitle{
   display: inline-block;
   font-weight: bolder;
   background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1px 10px;
+  border-radius: 45%;
+  border-color: pink;
+  border-width: 10px;
+  border-style: outset;
+  padding: 1px 15px;
+}
+.pageTitle:hover{
+  border-style: inset;
 }
 .flexcenter{
   display: flex;
@@ -441,7 +471,7 @@ article {
   border-width: 10px 3px;
   overflow: auto;
   box-shadow: 
-  0 0 0 2px rgb(0, 165, 165);
+  0 0 0 2px rgb(0, 187, 187);
 }
 img {
   max-width: 95%;  
@@ -486,13 +516,14 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   max-width: 1px; 
   max-height: 1px;
   background-color: #1a1a1a;
+  border-color: pink;
   box-sizing: border-box;
 }
 /* tooltips div */
 .ttdiv {
   min-width: 95vw;
   max-width: 95vw;
-  max-height: 70vh;
+  max-height: 85vh;
   padding: 5px 0px;
   color: inherit;
   background-color: inherit;
@@ -503,14 +534,14 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   left: 10px;
   top: -30px;
   border-width: 20px 10px;
+  border-color: inherit;
   border-style: solid;
   border-radius: 20px;
-  border-color: rgb(155, 0, 0);
+  
   box-shadow: 
-    0 0 0 2px aqua,
-    0 0 0 10px rgba(0, 0, 0, 0.7),
-    0 0 0 20px rgba(0, 0, 0, 0.3),
-    0 0 0 80vmax rgba(0, 0, 0, 0.7)
+    0 0 0 3px rgb(0, 255, 255),
+    0 0 115px 10px rgb(0, 109, 109),
+    0 0 0 80vmax rgba(0, 0, 0, 0.8)
     ;
   overflow-y: auto;
 }
@@ -530,12 +561,10 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   color: inherit;
   background-color: inherit;
   padding: 5px 5px;
-  margin: 2px 2px 10px 2px;
-  border-width: 2px;
-  border-color: rgb(155, 0, 0);
-  border-style: solid;
-  max-width: 90%;
+  margin: 2px 2px 2px 2px;
+  
 }
+.gBdC {border-color: rgb(155, 0, 0);}
 
 /* tt open button */
 .ttbo {

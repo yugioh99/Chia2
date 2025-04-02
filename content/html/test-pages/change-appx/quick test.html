@@ -1,0 +1,38 @@
+<div class="thing" id="thing1">
+  Thing 1
+</div>
+<div class="thing" id="thing2">
+  Thing 2
+</div>
+<div class="thing" id="thing3">
+  Thing 3
+</div>
+
+<button onClick="showIdAndHideOthers('thing1')">Show 1</button>
+<button onClick="showIdAndHideOthers('thing2')">Show 2</button>
+<button onClick="showIdAndHideOthers('thing3')">Show 3</button>
+
+
+
+<style type="text/css>
+.thing {
+  display: none;
+}
+
+.thing.selected {
+  display: block;
+}
+</style>
+
+<script>
+let lastElement;
+function showIdAndHideOthers(idToShow) {
+  const elementToShow = document.getElementById(idToShow);
+  if (lastElement != null) {
+    lastElement.classList.remove('selected');
+  }
+  elementToShow.classList.add('selected');
+  lastElement = elementToShow;
+}
+
+</script>

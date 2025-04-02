@@ -1,0 +1,25 @@
+// Function to change the background image
+function changeBackground(imageUrl) {
+  document.body.style.backgroundImage = `url(${imageUrl})`;
+  localStorage.setItem('backgroundImage', imageUrl);
+}
+
+// Select background image buttons (assuming they have a class 'bg-button')
+const bgButtons = document.querySelectorAll('.bg-button');
+
+bgButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const imageUrl = button.dataset.imageUrl; // Get image URL from data attribute
+    changeBackground(imageUrl);
+  });
+});
+
+// Load the saved background image on page load
+const savedImageUrl = localStorage.getItem('backgroundImage');
+if (savedImageUrl) {
+  changeBackground(savedImageUrl);
+}
+
+html
+<button class="bg-button" data-image-url="image1.jpg">Image 1</button>
+<button class="bg-button" data-image-url="image2.jpg">Image 2</button>

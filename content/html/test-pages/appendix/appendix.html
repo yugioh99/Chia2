@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ac {
+  display: grid;
+  gap: 0px;
+}
+
+.ac > div {
+  border-color: rgb(255, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.gd {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.gi {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+</style>
+</head>
+<body>
+
+<h1>A Five Items Grid Layout</h1>
+
+<div id="exam" class="ac"><!-- example START -->
+  <div class="gd"><h2>Example <sup><a href="#exam">#</a></sup></h2>
+    <p><a href="">Example</a>: This is the description area for the glossary. It's not going to be textcontent imports.
+
+    </p>
+  </div>
+  <div class="gi">Big images: <a href="">1</a>, <a href="">2</a> <br> Small images: View <br><img src="../../../img/icons/appendix.png" alt="">
+  </div>
+  <div class="item3">Tools
+
+  </div>  
+  <div class="item4">Theories
+
+  </div>
+</div><!-- example END -->
+
+<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+<p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
+
+</body>
+</html>

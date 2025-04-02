@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" id="root">
+<head>
+	<!--  Essentials -->
+	<meta charset="UTF-8">
+	<title>STS Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style3.css">
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:title" content="Shadi Trading Systems">
+	<meta property="og:type" content="website">
+	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time.">
+	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time.">
+	<meta property="og:site_name" content="STS">
+	<meta name="twitter:image:alt" content="Shadi Trading Systems">
+	<!--  Javascript, favicon -->
+	<script type="text/javascript" src="core.js" defer></script>
+	<script type="text/javascript" src="glossary3.js" defer></script>
+	<link rel="shortcut icon" href="sts-mini.png" type="image/x-icon">
+</head>
+
+	<body class="pFS pFF pFC">
+
+<header>
+<nav class="headernav"> <!-- headernav START   -->
+<div class="smallScreenTitle">STS</div>
+<div class="lddcontainer"><!-- ldd = location drop down = Navigation START  -->
+	<button class="navdropbtn menubtn" onclick="tdb('lddid')">Navigation</button>
+	<div id="lddid" class="lddcontent pBdC"> 
+		Navigation
+		<a href="delete-appx.html">Home</a>
+		<a onclick="goBack();">Return to previous page</a>	
+		Settings
+		
+	</div>
+</div><!-- navigation END -->
+<div class="bmddcontainer"><!-- bm = bookmark START -->
+	<button  class="menubtn navdropbtn" onclick="bmddbtn(); closeL();">Bookmarks</button>
+	<div id="bmddid2" class="bmddcontent2 pBdC">
+		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
+	</div>
+	<div id="bmddid" class="bmddcontent pBdC"> 
+		Bookmarks 
+		<a onclick="saveBm();"><button class="settingsbtn">save #1</button></a>
+		<a onclick="saveBm2();"><button class="settingsbtn">save #2</button></a>
+		<a onclick="goToBm();">view #1</a>
+		<a onclick="goToBm2();">view #2</a>
+		Sections on this page
+		<a href="#top">top</a>
+		<a href="#sddid">Settings</a>
+		<a href="#previewbm">Preview</a>
+	</div>
+</div><!-- bm = bookmark END -->
+<div class="wideScreenTitle">Shadi Trading Systems - Settings</div>
+<div class="sddcontainer"><!-- settings START -->
+<!-- <button class="menubtn" onclick="window.history.back()">Go Back</button>-->
+	<button class="menubtn" onclick="goBack();">Go Back</button>
+</div><!-- settings END -->
+
+</nav><!-- headernav END -->
+</header>
+
+<div class="ttgroup pageBg"><!-- ttgroup START -->
+
+<!-- footnotes group START -->
+<div id="fn0" class="ttdiv"><!-- footnote START -->
+	<button class="ttbtn-close" onclick="tdb('fn0')">Close</button>
+	<h2>Footnote 0</h2>
+	<p>Footnote text goes here.</p> 	
+	<img id="ttimgfn0" decoding="async" data-src="../../../img/icons/footnotes.png" alt="footnote 0" >
+</div><!-- footnote END -->
+<!-- footnotes group END -->
+
+<!-- Glossary group START -->
+<div id="ttexam" class="ttdiv"><!-- glossary START -->
+	<button class="ttbtn-close" onclick="tdb('ttexam')">Close</button>
+	<h2>Example</h2>
+	<p id="gexam"></p> 
+	<a href="">Index Links</a>: for more details on this topic. (ID: N/A)<br>	
+	<img id="ttimgexam" decoding="async" data-src="example.PNG" alt="Example" >
+</div><!-- glossary END -->
+<!-- Glossary group END -->
+
+</div><!-- ttgroup END -->
+
+<main><!-- Main  ----------------------------   -->
+<!-- Section template. Don't use it, just make a copy.
+<section id="examplebm" class="pageBg"><h2>Section Title<sup><a href="#examplebm">#</a></sup></h2>
+	<p>Content in this section goes here. 
+	<a class="ttbtn-open" onclick="tdb('ttexam'); pimg('ttimgexam')">Example</a>
+	<sup><a class="ttbtn-open" onclick="tdb('fn0'); pimg('ttimgfn0')">[0]</a></sup>
+	</p>
+</section> -->
+<div id="sddid" class="sddcontent"> <!-- sddcontent START -->
+	<div class="sfs settingstitle">
+		<div>
+			<span style="font-size: 1.5em;">Settings</span> 
+		</div>
+		<div>
+			<button class="srDefaults" onclick="restoreDefaults();">Restore Defaults</button> 
+		</div>
+	</div>
+	<div >
+		<div class="settingsnav sfs">
+			<button class="smenubtn" onclick="showssm('textsizessm')">Text Size</button>
+			<button class="smenubtn" onclick="showssm('fontssm')">Font Family</button>
+			<button class="smenubtn" onclick="showssm('themessm')">Themes</button>
+			<button class="smenubtn" onclick="showssm('bgimgssm')">BG Image</button>
+		</div>
+	</div>
+	<div id="textsizessm" class="ssm ">
+		select text size 
+		<button onclick="sFS('calc(7px + 0.5vw)')" class="settingsbtn">07</button>
+		<button onclick="sFS('calc(8px + 0.5vw)')" class="settingsbtn">08</button>
+		<button onclick="sFS('calc(9px + 0.5vw)')" class="settingsbtn">09</button>
+		<button onclick="sFS('calc(10px + 0.5vw)')" class="settingsbtn">10</button>
+		<button onclick="sFS('calc(11px + 0.5vw)')" class="settingsbtn">11</button>
+		<button onclick="sFS('calc(12px + 0.5vw)')" class="settingsbtn">12</button>
+		<button onclick="sFS('calc(13px + 0.5vw)')" class="settingsbtn">13</button>
+		<button onclick="sFS('calc(14px + 0.5vw)')" class="settingsbtn">14</button>
+		<button onclick="sFS('calc(15px + 0.5vw)')" class="settingsbtn">15</button>
+		<button onclick="sFS('calc(16px + 0.5vw)')" class="settingsbtn">16</button>
+		<button onclick="sFS('calc(17px + 0.5vw)')" class="settingsbtn">17</button>
+		<button onclick="sFS('calc(18px + 0.5vw)')" class="settingsbtn">18</button>
+		<button onclick="sFS('calc(19px + 0.5vw)')" class="settingsbtn">19</button>
+		<button onclick="sFS('calc(20px + 0.5vw)')" class="settingsbtn">20</button>
+		<button onclick="sFS('calc(21px + 0.5vw)')" class="settingsbtn">21</button>
+		<button onclick="sFS('calc(22px + 0.5vw)')" class="settingsbtn">22</button>
+		<button onclick="sFS('calc(24px + 0.5vw)')" class="settingsbtn">24</button>
+		<button onclick="sFS('calc(26px + 0.5vw)')" class="settingsbtn">26</button>
+		<button onclick="sFS('calc(28px + 0.5vw)')" class="settingsbtn">28</button>
+		<button onclick="sFS('calc(30px + 0.5vw)')" class="settingsbtn">30</button>
+		<button onclick="sFS('calc(32px + 0.5vw)')" class="settingsbtn">32</button>
+		<button onclick="sFS('calc(34px + 0.5vw)')" class="settingsbtn">34</button>
+		<button onclick="sFS('calc(38px + 0.5vw)')" class="settingsbtn">38</button>
+	</div>
+	<div id="fontssm" class="ssm" style="font-family: Arial, Helvetica, sans-serif;">
+		Font Family
+		<button onclick="sFF('Arial')" class="settingsbtn">Arial</button>
+		<button onclick="sFF('Baskerville')" class="settingsbtn">Baskerville</button>
+		<button onclick="sFF('Bradley Hand')" class="settingsbtn">Bradley Hand</button>
+		<button onclick="sFF('Brush Script MT')" class="settingsbtn">Brush Script MT</button>
+		<button onclick="sFF('Comic Sans MS')" class="settingsbtn">Comic Sans MS</button>
+		<button onclick="sFF('Courier')" class="settingsbtn">Courier</button>
+		<button onclick="sFF('Cursive')" class="settingsbtn">Cursive</button>
+		<button onclick="sFF('Fira Sans')" class="settingsbtn">Fira Sans</button>
+		<button onclick="sFF('Georgia')" class="settingsbtn">Georgia</button>
+		<button onclick="sFF('Gill Sans')" class="settingsbtn">Gill Sans</button>
+		<button onclick="sFF('Helvetica')" class="settingsbtn">Helvetica</button>
+		<button onclick="sFF('Inter')" class="settingsbtn">Inter</button>
+		<button onclick="sFF('Libre Franklin')" class="settingsbtn">Libre Franklin</button>
+		<button onclick="sFF('Lora')" class="settingsbtn">Lora</button>
+		<button onclick="sFF('Lucida')" class="settingsbtn">Lucida</button>
+		<button onclick="sFF('Luminari')" class="settingsbtn">Luminari</button>
+		<button onclick="sFF('Montserrat')" class="settingsbtn">Montserrat</button>
+		<button onclick="sFF('Monaco')" class="settingsbtn">Monaco</button>
+		<button onclick="sFF('Palatino')" class="settingsbtn">Palatino</button>
+		<button onclick="sFF('Poppins')" class="settingsbtn">Poppins</button>
+		<button onclick="sFF('Raleway')" class="settingsbtn">Raleway</button>
+		<button onclick="sFF('Roboto')" class="settingsbtn">Roboto</button>
+		<button onclick="sFF('sans-serif')" class="settingsbtn">Sans Serif</button>
+		<button onclick="sFF('Segoe UI')" class="settingsbtn">Segoe UI</button>
+		<button onclick="sFF('Tahoma')" class="settingsbtn">Tahoma</button>
+		<button onclick="sFF('Times New Roman')" class="settingsbtn">Times New Roman</button>
+		<button onclick="sFF('Trebuchet MS')" class="settingsbtn">Trebuchet MS</button>
+		<button onclick="sFF('Verdana')" class="settingsbtn">Verdana</button>
+		
+	</div>
+	<div id="themessm" class="ssm">
+		<div>
+			Content
+			<button class="settingsbtn" type="button" onclick="sFC('#dddddd'); sBgC('#1a1a1a');">Dark</button>
+			<button class="settingsbtn" type="button" onclick="sFC('#000000'); sBgC('#ffffff');">Light</button>
+			<button class="settingsbtn" type="button" onclick="sFC('#000000'); sBgC('rgb(221, 221, 221)');">Grey</button>
+		</div>
+		<div>
+			Border
+			<button class="settingsbtn" type="button" onclick="sBdC('#ffc0cb');">Pink</button>
+			<button class="settingsbtn" type="button" onclick="sBdC('rgb(146, 70, 8)');">Brown</button>
+			<button class="settingsbtn" type="button" onclick="sBdC('rgb(114, 114, 114)');">Grey</button>
+		</div>
+		
+	</div>
+</div><!-- sddcontent END -->
+
+<!-- transparent div to display background image START -->
+<div id="bgimgssm" class="ssm" style="background-color: transparent; min-height: 30vh;">
+	<div class="bgimgbuttons"> background image
+		<button onclick="changeBackground('../../../img/background/leopardprint.jpg')" class="settingsbtn">leopard print</button>
+		<button onclick="changeBackground('blacktile.png')" class="settingsbtn">black</button>
+		<button onclick="changeBackground('grey-very-dark.png')" class="settingsbtn">grey 1</button>
+		<button onclick="changeBackground('grey-darker.png')" class="settingsbtn">grey 2</button>
+		<button onclick="changeBackground('grey-medium.png')" class="settingsbtn">grey 3</button>
+		<button onclick="changeBackground('grey-lighter.png')" class="settingsbtn">grey 4</button>
+		
+	</div>
+	<div></div>
+</div>
+<!-- transparent div END -->
+
+
+<section id="previewbm" class="pFS pFC pFF pBgC pBdC" >
+	<p>
+	This is a preview. <br>
+	the quick brown fox jumps over the lazy dog. <br>
+	THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. <br>
+	1234567890!@#$%^&*()? <br>
+	uppercase i, lowercase L, one <br>
+	Il1
+	</p>
+</section>
+
+</main>
+
+	</body>
+
+	
+</html>

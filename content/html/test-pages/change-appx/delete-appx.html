@@ -3,7 +3,7 @@
 <head>
 	<!--  Essentials -->
 	<meta charset="UTF-8">
-	<title>level 1 edit 3</title>
+	<title>STS Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style3.css">
 	<!--  Non-Essential, But Recommended -->
@@ -17,195 +17,128 @@
 	<script type="text/javascript" src="core.js" defer></script>
 	<script type="text/javascript" src="glossary3.js" defer></script>
 	<link rel="shortcut icon" href="sts-mini.png" type="image/x-icon">
-	
 </head>
 
-	<body class="pageBg pageTx">
-
+	<body class="pFF pFS pFC">
 
 <header>
-<nav  aria-label="Main menu"> <!-- l=location, bm=bookmark, al=appx links, s=settings for css and js  -->
-<ul>
-	<li><div class="lddcontainer"><!-- l=location  -->
-		<button onclick="tdb('lddid')">Navigation</button>
-		<div id="lddid" class="lddcontent"> 		
-		  <a href="../home.html"><img src="../../../img/icons/home.png" alt="" class="img-navbar-location">Home</a>
-		  <a href="../um/index.html"><img src="../../../img/icons/user-manual.jpg" alt="" class="img-navbar-location">User Manual</a>
-		  <a href="../ptc/index.html"><img src="../../../img/icons/ptc-mini.png" alt="" class="img-navbar-location">PTC</a>
-		  <a href="../res/index.html"><img src="../../../img/icons/resources.png" alt="" class="img-navbar-location">Resources</a>
-		  <a href="../appx/index.html"><img src="../../../img/icons/appendix.png" alt="" class="img-navbar-location">Appendix</a>
-		  Level 1
+<nav class="headernav"> <!-- headernav START   -->
+<div class="smallScreenTitle">STS</div>
+<div class="lddcontainer"><!-- ldd = location drop down = Navigation START  -->
+	<button class="navdropbtn menubtn" onclick="tdb('lddid')">Navigation</button>
+	<div id="lddid" class="lddcontent pBdC"> 
+		Navigation <br>	
+		Home
+	</div>
+</div><!-- navigation END -->
+<div class="bmddcontainer"><!-- bm = bookmark START -->
+	<button  class="menubtn navdropbtn" onclick="bmddbtn(); ">Bookmarks</button>
+	<div id="bmddid2" class="bmddcontent2 pBdC">
+		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
+	</div>
+	<div id="bmddid" class="bmddcontent pBdC"> 
+		Bookmarks 
+		<a onclick="saveBm();"><button class="settingsbtn">save #1</button></a>
+		<a onclick="saveBm2();"><button class="settingsbtn">save #2</button></a>
+		<a onclick="goToBm();">view #1</a>
+		<a onclick="goToBm2();">view #2</a>
+		Sections on this page
+		<a href="#top">top</a>
+		<a href="#stsbm">STS</a>
+		<a href="#otherstuffbm">Other Stuff</a>
+		<a href="#exambm">Example</a>
+	</div>
+</div><!-- bm = bookmark END -->
+<div class="wideScreenTitle">Shadi Trading Systems</div>
+<div class="sddcontainer"><!-- settings START -->
+	<a href="settings.html" onclick="sp();"><button class="menubtn">Settings</button></a>
+</div><!-- settings END -->
 
-			
-		  
-		<!-- template for level 1
-		<img src="../../../img/icons/down-right-arrow.png" alt="">Level 1<img src="../../../img/icons/navigation.png" alt="" class="img-navbar-little" onclick="lmyFunction()">
-		-->
-
-		</div>
-	  </div>
-	</li>
-	<li><div class="alddcontainer"><!-- al=appx links  -->
-		<button class=" aldropbtn" onclick="alddbtn()">Appx</button>
-		<div id="alddid2" class="alddcontent2">
-			<input type="text" placeholder="Search.." id="alInput" onkeyup="alfilter()">
-		</div>
-		<div id="alddid" class="alddcontent">
-		  Appendix links 	
-		  	
-		  
-		  <a onclick="tdb('ttexam')">example</a>
-		  <a onclick="tdb('ttpitc')">pitchfork</a>
-		</div>
-	  </div>
-	</li>
-	<li><div class="bmddcontainer"><!-- bm=bookmark --><!--
-		<button onclick="bmmyFunction()" class="bmdropbtn">Level 1</button> -->
-		<button aria-expanded="false"   class="bmdropbtn" onclick="bmddbtn()">Bookmarks</button>
-		<div id="bmddid2" class="bmddcontent2">
-			<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
-		</div>
-		<div id="bmddid" class="bmddcontent"> 
-		  Bookmarks 
-		  <img src="../../../img/icons/bookmark.png" alt=""  class="img-navbar bmdropbtn" onclick="bmddbtn()">
-		  <a href="#todo">to-do</a>
-		  <a href="#headsec">head</a>
-		  <a href="#headersec">header</a>
-		  
-		</div>
-	  </div>
-	</li>
-	<li><div class="sddcontainer"><!-- th=theme = settings -->
-		<button aria-expanded="false" src="../../img/icons/theme.png"  onclick="sddbtn()">Settings</button>
-		<!--
-		<div id="thmyDropdown" class="thdropdown-content">
-		  -->
-			
-			<div id="sddid" class="sddcontent">
-	
-				<div class="settings-top1">Settings </div>
-			
-				<div role="option" class="settings-top2">
-			<!-- This is how they choose their font size -->
-			<select name="text size" onchange="fontSize(this);" size="1" style="font-size: 18px;">
-			<option value="">choose text size</option>
-			<option>calc(10px + 0.5vw)</option>
-			<option>calc(12px + 0.5vw)</option>
-			<option>calc(14px + 0.5vw)</option>
-			<option>calc(16px + 0.5vw)</option>
-			<option>calc(18px + 0.5vw)</option>
-			<option>calc(20px + 0.5vw)</option>
-			<option>calc(24px + 0.5vw)</option>
-			<option>calc(28px + 0.5vw)</option>
-			<option>calc(32px + 0.5vw)</option>
- 			</select>
- 		 <br>
- 		 <!-- this is how i would save it since they don't physically click a button -->
- 		 save text size
- 		 <input type="button" id="save" value="save" style="font-size: 18px;" aria-label="save text size">
-				</div>
-				
-				<div class="settings-left">Dark Theme<br>
-					<button type="button" onclick="changeTxColor('#dddddd');">text</button><br>
-					<button type="button" onclick="changeBgColor('#1a1a1a');">background</button>
-				</div>
-			
-				<div class="settings-right">Light Theme<br>
-					<button type="button" onclick="changeTxColor('#000000');">text</button><br>
-					<button type="button" onclick="changeBgColor('#ffffff');">background</button>
-				</div>  
-			</div>
-
-		</div>
-	  </div>
-	</li>
-</ul>
-</nav>	
+</nav><!-- headernav END -->
 </header>
-<div class="ttgroup"><!-- ttgroup START -->
-	
-	<div id="ttexam" class="ttdiv"><!-- entry START -->
-		<h2><a href="">Example</a></h2>
-		<p id="gexam"></p> 	
-		<a class="ttbtn-close" onclick="tdb('ttexam')">Close</a><br>
-		<img  src="../../img/background/2.jpg" alt="Example" >
-	</div><!-- entry END -->
-	<div id="ttpitc" class="ttdiv"><!-- entry START -->
-		<h2><a href="">Pitchfork</a></h2>tools #2
-		<p id="gpitc"></p> 	
-		<a class="ttbtn-close" onclick="tdb('ttpitc')">Close</a><br>
-		<img  src="../../img/background/2.jpg" alt="pitchfork" >
-	</div><!-- entry END -->
 
-  
+<div class="ttgroup pBgC"><!-- ttgroup START -->
+
+<!-- footnotes group START -->
+<div id="f0" class="ttdiv">
+	<button class="ttbc" onclick="tdb('f0')">Close</button>
+	<h2>Footnote 0</h2>
+	<p>Footnote text goes here.</p> 	
+	<img id="fi0" data-src="../../../img/icons/footnotes.png" decoding="async" alt="image">
+</div>
+<!-- footnotes group END -->
+
+<!-- Glossary group START -->
+<div id="ttexam" class="ttdiv"><!-- example -->
+	<button class="ttbc" onclick="tdb('ttexam')">Close</button>
+	<h2>Glossary</h2>
+	<p id="gexam"></p> 
+	<a href="#exambm" onclick="sp();">Appendix</a>: view details on this topic. (ID: N/A)<br>	
+	<img id="ttiexam" data-src="example.PNG" decoding="async" alt="image" >
+</div>
+
+<!-- Glossary group END -->
+
 </div><!-- ttgroup END -->
 
 <main><!-- Main  ----------------------------   -->
-	
-	
-<h1><img src="../../../img/icons/repository-mini.png" class="img-noborder-icon" alt="image here"> Level 1 - new index</h1><hr>
-
-<section id="headsec" class="pageBg">
-head<br><br> <a href="index.html">old index</a><br> <br><!--
-<button class="ttbtn" onclick="opexamx()">example</button><br>-->
-<button class="ttbtn" onclick="tdb('ttexam')">example</button><br>
-<button class="ttbtn" onclick="tdb('ttpitc')">pitchfork</button><br><br>
-<br><br>
-<a class="ttbtn-open" onclick="tdb('ttexam')">Example</a><br>
-<a class="ttbtn-open" onclick="tdb('ttpitc')">Pitchfork</a><br>
-
-<img src="../../../img/icons/folder.png" style="max-width: 33vmin;" alt="">
+<div class="flexse">
+	<div class="flexcenter">
+		<div id="bigS" class="ball">
+			<span class="letter">S</span>
+		</div>
+	</div>
+	<div class="flexcenter">
+		<span class="hppageTitle pBgC"><span onclick="spin()" class="flpt">S</span>hadi <br> <span onclick="spin()" class="flpt">T</span>rading <br> <span onclick="spin()" class="flpt">S</span>ystems</span>
+	</div>
+</div>
+<!-- --> Section template. Don't use it, just make a copy.
+<section id="examplebm" class="pFF pFS pFC pBgC pBdC"><h2>Section Title<sup><a href="#examplebm">#</a></sup></h2>
+	<p> 
+		Content in this section goes here.
+	</p>
+	<a class="ttbo" onclick="tdb('ttexam'); vi('ttiexam');">Example</a> glossary button <br>
+	<sup><a class="ttbo" onclick="tdb('f0'); vi('fi0')">[0]</a></sup> footnote button <br>
+	<img id="ap" onclick="vi('ap')" data-src="../../../img/icons/appendix.png" decoding="async" alt="view image 1"> inline image <br>
+	<a href="../../../img/background/1.jpg">view&nbsp;image</a> big image in same window <br>
+</section> 
+<section id="stsbm" class="pFF pFS pFC pBgC pBdC"><h2>STS<sup><a href="#stsbm">#</a></sup></h2>
+<div class="cores">
+	<a href="../all/redux-all.html">Tools</a>
+	<a href="">Theories</a>
+	<a href="">Strategies</a>
+</div>
 </section>
-
-
-<section id="headersec" class="pageBg">
-	<h2>test for header <a href="#headersec">#</a></h2>
-header<br><p>
-<a href="header/header.html">header</a> basic header<br>
-<a href="header/abc.html">ABC</a> bookmarks in alphabetical order<br>
-<a href="header/search.html">Search</a> searchable bookmarks<br>
-<a href="header/tag.html">Tag</a> bookmarks grouped by tag<br></p>
+<section id="otherstuffbm" class="pFF pFS pFC pBgC pBdC"><h2>Other Stuff<sup><a href="#otherstuffbm">#</a></sup></h2>
+	<a href="../all/redux-all.html">User Manual</a>: How to use this website and STS.<br>
+	<a href="glossary.html">Appendix</a>: Glossary and Index <br>
+	<a href="">Updates</a>: Recent updates. 
 </section>
+<article id="exambm" class="pFF pFS pFC pBgC ac">
+	<div class="gd"><h2>Example<sup><a href="#exambm">#</a></sup></h2>
+		<p><a class="ttbo" onclick="tdb('ttexam'); vi('ttiexam');">Example</a>: This is the description area for the glossary. It's not going to be textcontent imports.
+	
+		</p>
+	</div>
+	<div class="gfi">full screen images: 
+		<a href="../../../img/background/1.jpg">1</a>, 
+		<a href="../../../img/background/leopardprint.jpg">2</a> 
+	</div>
+	<div class="gii">inline images: <button onclick="vi('giexam1'); vi('giexam2');" class="smenubtn">view all</button>  <br>
+		<img id="giexam1" onclick="vi('giexam1')" data-src="../../../img/icons/appendix.png" decoding="async" alt="view image 1">
+		<img id="giexam2" onclick="vi('giexam2')" data-src="../../../img/icons/appendix.png" decoding="async" alt="view image 2">
+	</div>
+	<div>Tools Index
+	
+	</div>  
+	<div>Theories Index
+	
+	</div>
 
+</article> 
 
 </main>
 
-<br>
-
-
-
-<footer id="footnotes">
-
-<h1><img class="img-noborder-icon" src="../../../img/icons/footnotes.png" alt="footnotes"> Footnotes</h1><hr>
-
-
-<article id="a"><p> a. <u>To Do List</u>: 
-	<br><a href="#a1">a1</a> Do the repo page.
-	 </p>
-
-</article>
-
-
-<article id="b"><p> a. trend line:</p> 
-	<p>this page: <a href="#a1">a1</a></p>
-	<p>appendix: what</p>
-
-</article>
-
-<article>
-	<!-- container-appx-top START -->
-	<div class="container-appx-top">
-		ds
-
-	</div> <!-- container-appx-top END -->
-</article>
-
-
-</footer>
-
-
-<!-- better to load these js at the bottom -->
-	
 	</body>
 
 	

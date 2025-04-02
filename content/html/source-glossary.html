@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Text Content</title>
+</head>
+<body>
+  <div id="data-container"></div>
+  
+  <script>
+  const jsonData = {
+    "ex": "Example. This is an example. (ID ex)",
+    "pi": "Pitchfork is a drawing tool. (ID pi)",
+    "la": "LCD is a Lagrangian Coherent Structure. (ID la)"
+  };
+
+  function gData(key) {
+    const container = document.getElementById("data-container");
+    container.textContent = jsonData[key];
+  }
+  </script>
+
+  <button onclick="gData('ex');">example</button>
+  <button onclick="gData('pi');">pitchfork</button>
+  <button onclick="gData('la');">lcs</button>
+</body>
+</html>

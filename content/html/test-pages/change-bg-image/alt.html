@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Class Example</title>
+  <style>
+    .active {
+      background-image: url('../../../img/background/1.jpg');
+    }
+  </style>
+  <style>
+    .bg{
+      background-color: black;
+    }
+  </style>
+</head>
+<body  class="bodyBgBtn" name>
+  <button >Toggle Class</button>
+  <button >Toggle Class og</button>
+  <script>
+    const tBgImage = document.getElementsByClassName('bodyBgBtn');
+    const turnBgOn = 'active';
+
+    tBgImage.addEventListener('click', () => {
+      tBgImage.classList.toggle(turnBgOn);
+
+      // Store the state in local storage
+      localStorage.setItem('isBgOn', tBgImage.classList.contains(turnBgOn));
+    });
+
+    // Check local storage on page load
+    if (localStorage.getItem('isBgOn') === 'true') {
+      tBgImage.classList.add(turnBgOn);
+    }
+/*
+    const button = document.getElementById('myButton');
+    const activeClass = 'active';
+
+    button.addEventListener('click', () => {
+      button.classList.toggle(activeClass);
+
+      // Store the state in local storage
+      localStorage.setItem('buttonState', button.classList.contains(activeClass));
+    });
+
+    // Check local storage on page load
+    if (localStorage.getItem('buttonState') === 'true') {
+      button.classList.add(activeClass);
+    }
+*/
+
+</script>
+</body>
+</html>

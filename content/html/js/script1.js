@@ -104,8 +104,8 @@ function bmddbtn() {
   document.getElementById("bmddid2").classList.toggle("bmshow");
 }
 
-// show only one settings sub menu 
-function showssm(idToShow) {
+// show only one settings sub menu or glossary appendix link
+function o(idToShow) {
   const elementsToHide = document.getElementsByClassName('ssm');
   const elementToShow = document.getElementById(idToShow);
   for (const el of elementsToHide) {

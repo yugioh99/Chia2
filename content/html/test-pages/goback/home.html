@@ -1,0 +1,79 @@
+This is home page <br>
+<a href="other.html">other</a> <br>
+<a href="set.html">Settings</a>
+
+
+<script>
+window.addEventListener('DOMContentLoaded', () => sp());
+function sp() {
+  localStorage.setItem('savedPage', window.location.href);
+}
+
+
+</script>
+<!--
+scr
+// Function to save current page to local storage
+
+// Call the function to save the page when the button is clicked
+
+document.getElementById('saveButton').addEventListener('click', saveCurrentPage);
+-->
+<br><br>
+<a href="#test">test</a>
+<br><br><br>
+
+----------------------------- <br>
+<script>
+// set bm 1
+function saveBm() {
+  localStorage.setItem("currentUrl", window.location.href); 
+}
+// go to bm1
+function goToBm() {
+  let savedBm = localStorage.getItem('currentUrl');
+  if (savedBm) {
+  window.location.href = savedBm;
+  } else {
+  // Handle case where no saved page exists (optional)
+  alert('No saved page found!');}
+}
+// set bm 2
+function saveBm2() {
+  localStorage.setItem("currenttwoUrl", window.location.href); 
+}
+
+// go to bm2
+function goToBm2() {
+  let savedBmtwo = localStorage.getItem('currenttwoUrl');
+  if (savedBmtwo) {
+  window.location.href = savedBmtwo;
+  } else {
+  // Handle case where no saved page exists (optional)
+  alert('No saved page found!');}
+}
+
+</script>
+
+<button onclick="saveBm();">save bm</button> <br>
+<a onclick="goToBm();">view bm</a>
+<br><br><br>
+<button onclick="saveBm2();">save bm2</button> <br>
+<a onclick="goToBm2();">view bm2</a>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+<br><br><br>
+
+
+
+
+<a id="test">test anchor</a>

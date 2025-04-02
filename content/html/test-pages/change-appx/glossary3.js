@@ -1,12 +1,10 @@
 // get glossary after dom content is loaded
-
-
 document.addEventListener("DOMContentLoaded", function glossary() {
+document.getElementById("gexam").textContent = "Example of a glossary entry.";
+document.getElementById("glcs").textContent = "LCS are Lagrangian Coherent Structures. In STS, its used to describe fluid dynamics of market sentiment.";
+document.getElementById("gpitc").textContent = "Pitchforks are drawing tools. In STS, it can be used to search for lagrangian coherent structures(LCS).";
 
-document.getElementById("gexam").textContent = "Example of the Glossary. Words inside of a green box will open the popup. The link above is for the Appendix. ";
 
-document.getElementById("gpitc").textContent = "Pitchforks are drawing tools used in trading to identify potential support and resistance levels, breakouts, and trend reversals. In STS, pitchforks can be used to identify lagrangian coherent structures(LCS).";
-  
 });  
 
 

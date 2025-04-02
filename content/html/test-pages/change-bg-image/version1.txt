@@ -1,0 +1,54 @@
+html
+<div class="background-selector">
+
+    <button data-bg="image1.jpg">Image 1</button>
+
+    <button data-bg="image2.jpg">Image 2</button>
+
+    <button data-bg="image3.jpg">Image 3</button>
+
+</div>
+
+
+
+css
+body {
+
+    background-image: url("image1.jpg"); /* Default background */
+
+}
+
+javascript
+Get current background from local storage.
+  function getStoredBackground() {
+
+        return localStorage.getItem("backgroundImage") || "image1.jpg"; // Default to "image1.jpg" if not set
+
+    }
+
+    
+
+    // Set initial background on page load
+
+    document.body.style.backgroundImage = `url(${getStoredBackground()})`;
+
+more javascript
+Handle button clicks to change background and save to local storage:
+
+const backgroundButtons = document.querySelectorAll(".background-selector button");
+
+
+
+    backgroundButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const newBackground = button.dataset.bg;
+
+            document.body.style.backgroundImage = `url(${newBackground})`;
+
+            localStorage.setItem("backgroundImage", newBackground);
+
+        });
+
+    });

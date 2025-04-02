@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background</title>
+    <style>
+        body {
+            background-image: url('leopardprint.jpg');
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeBackground('leopardprint.jpg')">leopard print</button>
+    <button onclick="changeBackground('1.jpg')">Image 1</button>
+    <button class="srDefaults" onclick="restoreDefaults();">Restore Defaults</button> 
+    <script>
+        function changeBackground(imageName) {
+            document.body.style.backgroundImage = `url(${imageName})`;
+            localStorage.setItem('backgroundImage', imageName);
+        }
+
+        // Load the saved background image on page load
+        window.onload = function() {
+            var savedImage = localStorage.getItem('backgroundImage');
+            if (savedImage) {
+                changeBackground(savedImage);
+            }
+        };
+    </script>
+    <script>
+        function restoreDefaults() {
+  localStorage.clear(); 
+  window.location.reload();
+}
+    </script>
+</body>
+</html>
