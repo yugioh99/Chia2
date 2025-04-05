@@ -473,6 +473,15 @@ article {
   box-shadow: 
   0 0 0 2px rgb(0, 187, 187);
 }
+.quote {
+  border-left: 4px solid pink;
+  display: block;
+  padding-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 1em;
+}
 img {
   max-width: 95%;  
   margin: 5px 5px 5px 5px;
