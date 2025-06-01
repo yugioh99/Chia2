@@ -196,14 +196,6 @@ function goBack() {
   alert('No saved page found!');}
 }
 
-
-/* make it spin START */
-function spin() {
-  var element = document.getElementById("bigS");
-  element.classList.toggle("spinner");
-}
-/* make it spin END */
-
 function restoreDefaults() {
   localStorage.clear(); 
   window.location.reload();

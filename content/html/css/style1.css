@@ -627,68 +627,6 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
 }
 /* tooltips END */
 
-/* homepage logos START */
-
-.hppageTitle{
-  font-size: 6vmin;
-  font-weight: bolder;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1px 10px;
-}
-.flpt{
-  font-size: 8vmin;
-  color: rgb(107, 0, 0);
-  background-color: pink;
-  border-radius: 50%;
-  padding: 1px 10px;
-  box-shadow:inset 0px 1px 0px 0px rgb(255, 221, 221);
-	background:linear-gradient(to bottom, pink 5%, rgb(216, 157, 166) 100%);
-  border:1px solid rgb(201, 119, 133);
-  text-shadow:0px 1px 0px rgb(145, 48, 64);
-}
-.flpt:hover{
-  background:linear-gradient(to bottom, rgb(216, 157, 166) 5%, pink 100%);
-	background-color:rgb(216, 157, 166);
-}
-
-/* big S */
-.ball {
-  width: 33vmin;
-  height: 33vmin;
-  border-radius: 50%;
-  background-color: pink;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  box-shadow:inset 0px 1px 0px 0px rgb(255, 221, 221);
-	background:linear-gradient(to bottom, pink 5%, rgb(207, 149, 158) 100%);
-  border:1px solid rgb(201, 119, 133);
-  text-shadow:0px 1px 0px rgb(145, 48, 64);
-
-}
-.ball:hover {
-	background:linear-gradient(to bottom, rgb(207, 149, 158) 5%, pink 100%);
-	background-color:rgb(216, 157, 166);
-}
-.letter {
-  font-size: 30vmin;
-  font-weight: bolder;
-  color: rgb(107, 0, 0);
-}
-
-
-.spinner {
-  animation: mymove 2s ;
-}
-@keyframes mymove {
-  100% {transform: rotate(360deg);}
-}
-
-
-/* homepage logos END */
-
 /* tools, strategies, theories button START */
 .cores{
   display: flex;
