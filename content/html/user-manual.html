@@ -5,23 +5,30 @@
 	<meta charset="UTF-8">
 	<title>PTC user manual</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style1.css">
-	<!--  Non-Essential, But Recommended -->
+	<link href="css/style1.css" rel="stylesheet">
+	<script src="js/script1.js" type="text/javascript" defer></script>
+	<script src="js/glossary1.js" type="text/javascript" defer></script>
+	<!-- Open Graph / Facebook -->
 	<meta property="og:title" content="Price Time Continuum">
 	<meta property="og:type" content="website">
-	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time.">
-	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time.">
+	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time">
+	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time">
 	<meta property="og:site_name" content="PTC">
+	<meta property="og:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
+	<meta property="og:image:alt" content="Price Time Continuum">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Price Time Continuum">
+	<meta name="twitter:description" content="Conceptualize the continuum of price-time as analogous to space-time">
+	<meta name="twitter:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
 	<meta name="twitter:image:alt" content="Price Time Continuum">
-	<!--  Javascript, favicon -->
-	<script type="text/javascript" src="js/script1.js" defer></script>
-	<script type="text/javascript" src="js/glossary1.js" defer></script>
-	<link rel="icon" type="image/png" href="../img/favicons/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="../img/favicons/favicon.svg" />
-	<link rel="icon" href="../img/favicons/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png" />
-	<meta name="apple-mobile-web-app-title" content="PTC" />
-	<link rel="manifest" href="../img/favicons/site.webmanifest" />
+	<!-- favicon -->
+	<link href="../img/favicons/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+	<link href="../img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
+	<link href="../img/favicons/favicon.ico" rel="icon">
+	<link href="../img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="../img/favicons/manifest.json" rel="manifest">
+	<meta name="apple-mobile-web-app-title" content="PTC">
 </head>
 
 	<body class="pFF pFS pFC">
@@ -226,31 +233,24 @@
 				<button class="smenubtn">Text Size</button>
 				<button class="smenubtn">Font Family</button>
 				<button class="smenubtn">Themes</button>
-				<button class="smenubtn">BG Image</button>
 			</div>
 		</div>
 	</div><!-- sddcontent END -->
 	
-	<p>The settings tab is in the top right corner. <br>Below are descriptions of what the buttons do.</p>
-	<h3>Restore Defualts</h3>
+	<p>The settings tab is at the top right corner of the screen. 
+	<br>Below are descriptions of what the buttons do.</p>
 	<p>
-		This will reset the website to its default appearance. It will also clear saved links in the bookmarks menu.
+		<button class="srDefaults" style="float: none;">Restore Defaults</button><br>
+		This button will reset the website to its default appearance. It will also clear saved links in the bookmarks menu.
 	</p>
-	<h3>Text Size</h3>
 	<p>
-		Select text size.
+		<button class="smenubtn">Text Size</button><br> select text size.
 	</p>
-	<h3>Font Family</h3>
 	<p>
-		Select font style.
+		<button class="smenubtn">Font Family</button><br> select font style.
 	</p>
-	<h3>Themes</h3>
 	<p>
-		Select text color and background color.
-	</p>
-	<h3>BG Image</h3>
-	<p>
-		Select background image.
+		<button class="smenubtn">Themes</button><br> select text, border, and background color.
 	</p>
 </section>
 <section id="sectitlebm" class="pFF pFS pFC pBgC pBdC"> <!-- glossary and appendix spacer -->
@@ -264,7 +264,7 @@
 	<button class="ttbc">Close</button><sup><a style="float: right;" class="ttbo" onclick="tdb('f9');">[9]</a></sup>
 	<h2>Glossary</h2>
 	<p>This is an <a class="ttbo" onclick="tdb('gcon'); gk('ex'); o('alex');">example</a><sup><a class="ttbo" onclick="tdb('f3');">[3]</a></sup> of a glossary pop up window when you click words with a red underline. (key ex)<sup><a class="ttbo" onclick="tdb('f2'); vi('fi2');">[2]</a></sup></p> 
-	<a href="appendix.html#exbm">Appendix Link</a>: learn more<sup><a class="ttbo" onclick="tdb('f4');">[4]</a></sup>
+	<a href="appendix.html#exbm" onclick="sp();">Appendix Link</a>: learn more<sup><a class="ttbo" onclick="tdb('f4');">[4]</a></sup>
 	</div>
 </article> 
 <article id="appendixbm" class="pFF pFS pFC pBgC ac"> <!-- appendix topic -->

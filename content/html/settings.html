@@ -3,28 +3,40 @@
 <head>
 	<!--  Essentials -->
 	<meta charset="UTF-8">
-	<title>STS Settings</title>
+	<title>PTC settings</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style1.css">
-	<!--  Non-Essential, But Recommended -->
-	<meta property="og:title" content="Shadi Trading Systems">
+	<link href="css/style1.css" rel="stylesheet">
+	<script src="js/script1.js" type="text/javascript" defer></script>
+	<script src="js/glossary1.js" type="text/javascript" defer></script>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Price Time Continuum">
 	<meta property="og:type" content="website">
-	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time.">
-	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time.">
-	<meta property="og:site_name" content="STS">
-	<meta name="twitter:image:alt" content="Shadi Trading Systems">
-	<!--  Javascript, favicon -->
-	<script type="text/javascript" src="js/script1.js" defer></script>
-	<script type="text/javascript" src="js/glossary1.js" defer></script>
-	<link rel="shortcut icon" href="sts-mini.png" type="image/x-icon">
+	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time">
+	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time">
+	<meta property="og:site_name" content="PTC">
+	<meta property="og:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
+	<meta property="og:image:alt" content="Price Time Continuum">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Price Time Continuum">
+	<meta name="twitter:description" content="Conceptualize the continuum of price-time as analogous to space-time">
+	<meta name="twitter:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
+	<meta name="twitter:image:alt" content="Price Time Continuum">
+	<!-- favicon -->
+	<link href="../img/favicons/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+	<link href="../img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
+	<link href="../img/favicons/favicon.ico" rel="icon">
+	<link href="../img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="../img/favicons/manifest.json" rel="manifest">
+	<meta name="apple-mobile-web-app-title" content="PTC">
 </head>
 
 	<body class="pFS pFF pFC">
 
 <header class="hcsettings">
 <nav class="headernav"> <!-- headernav START   -->
-<div class="smallScreenTitle">STS</div>
-<div class="midScreenTitle">STS - Settings</div>
+<div class="smallScreenTitle">PTC</div>
+<div class="midScreenTitle">PTC - Settings</div>
 <div class="lddcontainer lddsh"><!-- ldd = location drop down = Navigation START  -->
 	<button class="navdropbtn menubtn">Navigation</button>
 	<div id="lddid" class="lddcontent pBdC"> 
@@ -53,7 +65,7 @@
 		bottom
 	</div>
 </div><!-- bm = bookmark END -->
-<div class="wideScreenTitle">STS - Settings</div>
+<div class="wideScreenTitle">PTC - Settings</div>
 <div class="sddcontainer"><!-- settings START -->
 	<button class="menubtn" onclick="goBack();">Go Back</button>
 </div><!-- settings END -->
@@ -105,7 +117,6 @@
 			<button class="smenubtn" onclick="o('textsizessm');">Text Size</button>
 			<button class="smenubtn" onclick="o('fontssm');">Font Family</button>
 			<button class="smenubtn" onclick="o('themessm');">Themes</button>
-			<button class="smenubtn" onclick="o('bgimgssm');">BG Image</button>
 		</div>
 	</div>
 	<div id="textsizessm" class="ssm ssmc">
@@ -179,24 +190,14 @@
 			<button class="settingsbtn" type="button" onclick="sBdC('rgb(146, 70, 8)');">Brown</button>
 			<button class="settingsbtn" type="button" onclick="sBdC('rgb(114, 114, 114)');">Grey</button>
 		</div>
-		
+		<div>
+			Background
+			<button onclick="changeBackground('../img/background/leopardprint.jpg');" class="settingsbtn">leopard</button>
+			<button onclick="changeBackground('../img/background/black.png');" class="settingsbtn">black</button>
+			<button onclick="changeBackground('../img/background/grey.png');" class="settingsbtn">grey</button>
+		</div>
 	</div>
 </div><!-- sddcontent END -->
-
-<!-- transparent div to display background image START -->
-<div id="bgimgssm" class="ssm" style="background-color: transparent; min-height: 30vh;">
-	<div class="bgimgbuttons"> background image
-		<button onclick="changeBackground('../img/background/leopardprint.jpg');" class="settingsbtn">leopard print</button>
-		<button onclick="changeBackground('../img/background/black.png');" class="settingsbtn">black</button>
-		<button onclick="changeBackground('../img/background/grey1.png');" class="settingsbtn">grey 1</button>
-		<button onclick="changeBackground('../img/background/grey2.png');" class="settingsbtn">grey 2</button>
-		<button onclick="changeBackground('../img/background/grey3.png');" class="settingsbtn">grey 3</button>
-		<button onclick="changeBackground('../img/background/grey4.png');" class="settingsbtn">grey 4</button>
-	</div>
-	<div></div>
-</div>
-<!-- transparent div END -->
-
 
 <section id="previewbm" class="pFS pFC pFF pBgC pBdC" >
 	<p>
