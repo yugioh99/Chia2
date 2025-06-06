@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" id="root">
 <head>
+	<meta name="robots" content="noindex, nofollow">
 	<!--  Essentials -->
 	<meta charset="UTF-8">
 	<title>PTC settings</title>
@@ -8,20 +9,6 @@
 	<link href="css/style1.css" rel="stylesheet">
 	<script src="js/script1.js" type="text/javascript" defer></script>
 	<script src="js/glossary1.js" type="text/javascript" defer></script>
-	<!-- Open Graph / Facebook -->
-	<meta property="og:title" content="Price Time Continuum">
-	<meta property="og:type" content="website">
-	<meta name="description" content="Conceptualize the continuum of price-time as analogous to space-time">
-	<meta property="og:description" content="Conceptualize the continuum of price-time as analogous to space-time">
-	<meta property="og:site_name" content="PTC">
-	<meta property="og:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
-	<meta property="og:image:alt" content="Price Time Continuum">
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Price Time Continuum">
-	<meta name="twitter:description" content="Conceptualize the continuum of price-time as analogous to space-time">
-	<meta name="twitter:image" content="https://yugioh99.github.io/Chia2/content/img/background/1.jpg">
-	<meta name="twitter:image:alt" content="Price Time Continuum">
 	<!-- favicon -->
 	<link href="../img/favicons/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
 	<link href="../img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
@@ -33,7 +20,7 @@
 
 	<body class="pFS pFF pFC">
 
-<header class="hcsettings">
+<header class="hcsettings pBdC">
 <nav class="headernav"> <!-- headernav START   -->
 <div class="smallScreenTitle">PTC</div>
 <div class="midScreenTitle">PTC - Settings</div>
@@ -69,7 +56,6 @@
 <div class="sddcontainer"><!-- settings START -->
 	<button class="menubtn" onclick="goBack();">Go Back</button>
 </div><!-- settings END -->
-
 </nav><!-- headernav END -->
 </header>
 
@@ -179,6 +165,14 @@
 	</div>
 	<div id="themessm" class="ssm ssmc">
 		<div>
+			Presets
+			<button class="settingsbtn" type="button" onclick="sFC('#dddddd'); sBgC('#1a1a1a'); sBdC('#ffc0cb'); changeBackground('../img/background/leopardprint.jpg');">Shadi</button>
+			<button class="settingsbtn" type="button" onclick="sFC('#dddddd'); sBgC('#1a1a1a'); sBdC('rgb(146, 70, 8)'); changeBackground('../img/background/black.png');">Dark</button>
+			<button class="settingsbtn" type="button" onclick="sFC('#000000'); sBgC('#ffffff'); sBdC('rgb(146, 70, 8)'); changeBackground('../img/background/grey.png');">Light</button>
+			<button class="settingsbtn" type="button" onclick="sFC('#000000'); sBgC('rgb(221, 221, 221)'); sBdC('rgb(114, 114, 114)'); changeBackground('../img/background/grey.png');">Grey</button>
+		</div>
+		<hr>
+		<div>
 			Content
 			<button class="settingsbtn" type="button" onclick="sFC('#dddddd'); sBgC('#1a1a1a');">Dark</button>
 			<button class="settingsbtn" type="button" onclick="sFC('#000000'); sBgC('#ffffff');">Light</button>
@@ -200,7 +194,8 @@
 </div><!-- sddcontent END -->
 
 <section id="previewbm" class="pFS pFC pFF pBgC pBdC" >
-	<p>
+	<p> <img src="/test-relative.png" alt="test 1"> <br> 
+		<img src="../../perm/test-relative.png" alt="test 2"> <br>
 	This is a preview. <br>
 	the quick brown fox jumps over the lazy dog. <br>
 	THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. <br>

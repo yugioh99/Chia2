@@ -39,13 +39,16 @@ header {
   top: 0px;
   width: 100%;
   height: 30px;
+  border: rgb(146, 70, 8);
+  border-width: 1px;
+  border-style: solid;
 }
 @media screen and (min-width: 1001px) {
   header {
     left: 0px;
 }} 
 /* header colors main */
-.hcmain{ background-color: #ffc0cb; color: black;}
+.hcmain{ background-color: #1a1a1a; color: rgb(221, 221, 221);}
 /* header colors apx */
 .hcapx{ background-color: #800000; color: rgb(255, 255, 255);}
 /* header colors settings */
@@ -428,6 +431,14 @@ main {
 .homepagelogo{
   border-radius: 47%;
   background-color: rgb(0, 225, 255);
+  box-shadow: 
+    0 0 15px 10px rgb(0, 255, 255);
+}
+.homepagelogo:hover{
+  background-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 
+    0 0 10px 5px rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.8s ease;
 }
 .flexcenter{
   display: flex;
@@ -637,10 +648,17 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   padding: 1px 5px;
   color: black;
   font-weight: bolder;
+  box-shadow: 
+    0 0 5px 3px rgb(0, 255, 255),
+    0 0 15px 10px rgba(0, 255, 255, 0.1)
+    ;
 }
 .cores a:hover{
   border-color: rgb(255, 0, 0);
   color: rgb(11, 128, 128);
+  box-shadow: 
+    0 0 15px 7px rgba(255, 0, 0, 0.5);
+  transition: box-shadow 0.8s ease;
 }
 .cores a:active{
   position:relative;
