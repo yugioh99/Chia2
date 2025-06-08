@@ -440,6 +440,9 @@ main {
   background-color: rgba(0, 255, 255, 0.3);
   border-color: rgba(0, 255, 255, 0);
 } 
+.homepagelogo:active{
+  border-color: rgb(0, 255, 255);
+} 
 .flexcenter{
   display: flex;
   justify-content: center;
