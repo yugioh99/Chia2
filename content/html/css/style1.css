@@ -425,24 +425,21 @@ main {
   border-style: outset;
   padding: 1px 15px;
 }
-.pageTitle:hover{
-  border-style: inset;
-}
 .homepagelogo{
-  border-radius: 47%;
-  border-style: solid;
-  border-color: rgb(0, 255, 255);
-  border-width: 5px;
-  background-color: rgb(0, 225, 255);
-  transition: border 1s ease;
+  border-radius: 50%;
+  border-style: none;
+  padding: 7px;
+  background-color: rgb(253, 192, 203);
+  color: rgb(116, 4, 4);
+  font-size: 22vmin;
+  font-family: 'Times New Roman', Times, serif;
+  width: 22vmin;
+  height: 22vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.homepagelogo:hover{
-  background-color: rgba(0, 255, 255, 0.3);
-  border-color: rgba(0, 255, 255, 0);
-} 
-.homepagelogo:active{
-  border-color: rgb(0, 255, 255);
-} 
+
 .flexcenter{
   display: flex;
   justify-content: center;
@@ -519,7 +516,18 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   grid-column: 1 / span 2;
   grid-row: 3;
 }
-
+/* embedded youtube videos */
+.ytvideo {
+  width: 560px;
+  height: 315px;
+  border: 0px;
+}
+@media screen and (orientation: portrait){
+  .ytvideo {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
 
 /* main, page title, flexs, section END */
 
