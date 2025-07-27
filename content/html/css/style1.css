@@ -426,15 +426,14 @@ main {
   padding: 1px 15px;
 }
 .homepagelogo{
-  border-radius: 50%;
+  border-radius: 20%;
   border-style: none;
   padding: 7px;
-  background-color: rgb(253, 192, 203);
+  background-color: rgb(0, 0, 0);
   color: rgb(116, 4, 4);
   font-size: 22vmin;
   font-family: 'Times New Roman', Times, serif;
-  width: 22vmin;
-  height: 22vmin;
+  width: 28vmin;
   display: flex;
   justify-content: center;
   align-items: center;
