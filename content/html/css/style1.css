@@ -425,18 +425,22 @@ main {
   border-style: outset;
   padding: 1px 15px;
 }
-.homepagelogo{
+.seeddiv{
   border-radius: 20%;
   border-style: none;
-  padding: 7px;
+  padding: 1px;
   background-color: rgb(0, 0, 0);
   color: rgb(116, 4, 4);
   font-size: 22vmin;
   font-family: 'Times New Roman', Times, serif;
-  width: 28vmin;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.seedimg{
+  border-radius: 20%;
+
 }
 
 .flexcenter{
