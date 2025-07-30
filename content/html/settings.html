@@ -61,6 +61,48 @@
 
 <div class="ttgroup pBgC pBdC"><!-- ttgroup START -->
 	<div id="f1" class="ttdiv" style="top: 5px;">
+
+
+
+<header class="hcmain pBdC">
+<nav class="headernav"> <!-- headernav START   -->
+<div class="smallScreenTitle">PTC</div>
+<div class="midScreenTitle">PTC - Settings</div>
+<div class="lddcontainer lddsh"><!-- ldd = location drop down = Navigation START  -->
+	<button class="navdropbtn menubtn">Navigation</button>
+	<div id="lddid" class="lddcontent pBdC"> 
+		Navigation
+		
+		
+	</div>
+</div><!-- navigation END -->
+<div class="bmddcontainer bmddsh"><!-- bm = bookmark START -->
+	<button  class="menubtn navdropbtn">Bookmarks</button>
+	<div id="bmddid2" class="bmddcontent2 pBdC">
+		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter();">
+	</div>
+	<div id="bmddid" class="bmddcontent pBdC"> 
+		Bookmarks 
+		<a onclick="saveBm();"><button class="settingsbtn">save #1</button></a>
+		
+		<a onclick="goToBm(); sp();">view #1</a>
+		Sections
+		<a href="#top">top</a>
+		
+		bottom
+	</div>
+</div><!-- bm = bookmark END -->
+<div class="wideScreenTitle">PTC - Settings</div>
+<div class="sddcontainer"><!-- settings START -->
+	<button class="menubtn" onclick="goBack();">Go Back</button>
+</div><!-- settings END -->
+</nav><!-- headernav END -->
+</header>
+
+
+
+
+
 		<button class="ttbc" onclick="tdb('f1');">Close</button>
 		<h2>Footnote 1</h2>
 	<h3>Restore Defualts</h3>
