@@ -63,6 +63,11 @@ header {
 .headernav {
   justify-content: flex-start;
 }} 
+.headerpopup {
+  display: flex;
+  justify-content: center;
+  padding: 2px 2px;
+}
 
 /* nav Locations START */
 
@@ -304,6 +309,13 @@ header {
 }
 @media screen and (min-width: 1001px) {.wideScreenTitle {display: inline-flex;}}
 
+/* title in header in popup */
+.popupTitle {
+  font-size: 20px; 
+  font-weight: bolder;
+  display: inline-flex; 
+  justify-content: center;
+}
 
 /* navigation, bookmarks and settings buttons in header */
 .menubtn{
