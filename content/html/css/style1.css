@@ -601,7 +601,18 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   margin: 2px 2px 2px 2px;
   
 }
-.gBdC {border-color: rgb(155, 0, 0);}
+/* appendix popup and appendix iframe */
+.apu {
+  border-color: rgb(155, 0, 0);
+  height: 100vh;
+  border-width: 10px 10px;
+  border-radius: 10px;
+}
+.aif {
+  frameborder: 0;
+  width: 100%;
+  height: 97%;
+}
 
 /* tt open button */
 .ttbo {
@@ -653,6 +664,8 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
 	top:2px;
   left:2px;
 }
+
+
 /* tooltips END */
 
 /* tools, strategies, theories button START */
