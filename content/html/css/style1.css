@@ -493,7 +493,7 @@ article {
   0 0 0 2px rgb(0, 187, 187);
 }
 .quote {
-  border-left: 4px solid pink;
+  border-left: 4px solid rgb(146, 70, 8);;
   display: block;
   padding-left: 1em;
   margin-top: 1em;
@@ -562,7 +562,7 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
 .ttdiv {
   min-width: 95vw;
   max-width: 95vw;
-  max-height: 85vh;
+  max-height: 90vh;
   padding: 5px 0px;
   color: inherit;
   background-color: inherit;
