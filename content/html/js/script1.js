@@ -129,6 +129,23 @@ function bmfilter() {
     }
   }
 }
+
+// appendix filter 
+function apfilter() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("apInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("apddid");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 /* navigation END */
 
 /* lazyload START 
