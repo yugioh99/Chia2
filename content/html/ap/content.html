@@ -4,7 +4,7 @@
 	<meta name="robots" content="noindex, nofollow">
 	<!--  Essentials -->
 	<meta charset="UTF-8">
-	<title>template</title>
+	<title>Table of Contents for the appendix</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../css/style1.css" rel="stylesheet">
 	<script src="../js/script1.js" type="text/javascript" defer></script>
@@ -21,7 +21,12 @@
 
 <header class="hcmain pFC pBgC pBdC">
 <nav class="headerpopup"> <!-- headernav START   -->
-<div class="popupTitle put2 pBgC">Appendix Template (tem)</div>
+<div class="popupTitle put2 pBgC">
+	<div id="bmddid2" class="bmddcontent2 pBdC">
+		<input type="text" placeholder="Search.." id="bmInput" onkeyup="bmfilter()">
+	</div>
+	<div>Appendix Topics</div>
+</div>
 </nav><!-- headernav END -->
 </header>
 
@@ -40,7 +45,7 @@
 
 <main><!-- Main  ----------------------------   -->
 
-<!--   Section template. Don't use it, just make a copy.  -->
+<!--   Section template. Don't use it, just make a copy. 
 <section class="pFF pFS pFC pBgC pBdC"> section title (hide for notes)
 	<h2>Section Title</h2>
 	<p> 
@@ -70,19 +75,54 @@
 	<a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer">investopedia&nearr;</a> external link in new window <br>
 	<a href="../home.html" target="_top">Home</a> link with target top
 	</p>
+</section> -->
+
+<section class="pFF pFS pFC pBgC pBdC"> <!-- table of contents -->
+	<h2>Appendix Topics</h2>
+	<p> 
+		
+	<div id="bmddid" class="bmddcontent pBdC"> 
+		Bookmarks 
+		<a onclick="saveBm();"><button class="settingsbtn">save #1</button></a>
+		<a onclick="saveBm2();"><button class="settingsbtn">save #2</button></a>
+		<a onclick="goToBm(); sp();">view #1</a>
+		<a onclick="goToBm2(); sp();">view #2</a>
+		Sections
+		<a href="#top">top</a>
+		<a href="#ptcbm">PTC</a>
+		<a href="#otherstuffbm">Other Stuff</a>
+		bottom
+	</div>
+	</p>
+
+<hr>
+
+	<h3>Quotes</h3>
+	<p>
+		Below is a quote.
+		<span class="quote pBdC">This text is in a quote.</span>
+		Above is a quote.
+	</p>
+	<h3>Appendix and footnote buttons</h3>
+	<p>
+	<a href="tem.html" class="ttbo">template</a> appendix button <br> 
+	<sup><a class="ttbo" onclick="tdb('f0'); vi('fi0');">[0]</a></sup> footnote button 
+	</p>
+	<h3>Inline images</h3>
+	<p>
+	<button onclick="vi('sisectitle1'); vi('sisectitle2');" class="smenubtn">view multi</button> view multiple images in this section <br>
+	<img id="sisectitle1" onclick="vi('sisectitle1');" data-src="../../img/tooltips/example.PNG" decoding="async" alt="view image 1"> 
+	<img id="sisectitle2" onclick="vi('sisectitle2');" data-src="../../img/tooltips/example.PNG" decoding="async" alt="view image 2">
+	inline image 
+	</p>
+	<h3>Links</h3> 
+	<p>
+	<a href="../../img/background/1.jpg" target="_blank">view&nbsp;image&nbsp;&nearr;</a> big image in new window <br>
+	<a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer">investopedia&nearr;</a> external link in new window <br>
+	<a href="../home.html" target="_top">Home</a> link with target top
+	</p>
 </section>
 
-<section class="pFF pFS pFC pBgC pBdC"><!-- Indexed Links -->
-	<h2>Indexed Links by category</h2>
-	<h3>Tools</h3>
-	<p> <!--<a href="../home.html" target="_top">Link:</a> test link to home page -->
-		Link: description goes here
-	</p>
-	<h3>Theories</h3>
-	<p> 
-		Link: description goes here
-	</p>
-</section>
 </main>
 
 	</body>

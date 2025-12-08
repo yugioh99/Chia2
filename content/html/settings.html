@@ -4,7 +4,7 @@
 	<meta name="robots" content="noindex, nofollow">
 	<!--  Essentials -->
 	<meta charset="UTF-8">
-	<title>CTS settings</title>
+	<title>settings - CTS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style1.css" rel="stylesheet">
 	<script src="js/script1.js" type="text/javascript" defer></script>
@@ -64,15 +64,12 @@
  	<div id="flinks" class="ttdiv" style="top: 5px;">
 		<button class="ttbc" onclick="tdb('flinks');">Close</button>
 		<h2>Appendix Topics with links to this page in settings category</h2>
+		<!-- 
+		<p> (hide this for notes) template
+		<a href="ap/tem.html" target="ai" class="ttbo" onclick="tdb('acon');">template</a><br> 
+		Link: you can change the text size in settings
+		</p> -->
 		
-		<p><!-- template -->
-		<a href="ap/tem.html" target="ai" class="ttbo" onclick="tdb('acon');">template</a><br> 
-		Link: you can change the text size in settings
-		</p>
-		<p><!-- template -->
-		<a href="ap/tem.html" target="ai" class="ttbo" onclick="tdb('acon');">template</a><br> 
-		Link: you can change the text size in settings
-		</p>
 	</div>
 	<div id="f2" class="ttdiv" style="top: 5px;"> 
 		<button class="ttbc" onclick="tdb('f2');">Close</button>
@@ -97,7 +94,23 @@
 	<p>
 		Select background image.
 	</p>	
-	
+
+
+	<p>Below are descriptions of what the buttons do.</p>
+	<p>
+		<button class="srDefaults" style="float: none;">Restore Defaults</button><br>
+		This button will reset the website to its default appearance. It will also clear view # in the bookmarks menu.
+	</p>
+	<p>
+		<button class="smenubtn">Text Size</button><br> select text size.
+	</p>
+	<p>
+		<button class="smenubtn">Font Family</button><br> select font style.
+	</p>
+	<p>
+		<button class="smenubtn">Themes</button><br> select text, border, and background color.
+	</p>
+	<button class="ttbc" onclick="tdb('f2');">Close</button>
 	</div>
 
 <!-- footnotes group END -->
@@ -110,7 +123,7 @@
 	<a href="about:blank" target="ai"><button class="menubtn" onclick="tdb('acon');">Close </button></a>
 </div><!-- close END -->
 <div class="sddcontainer"><!-- content START -->
-	<a href="ap/tem.html" target="ai"><button class="menubtn">Content</button></a>
+	<a href="ap/content.html" target="ai"><button class="menubtn">Content</button></a>
 </div><!-- content END -->
 </nav><!-- headernav END -->
 </header>
@@ -124,7 +137,7 @@
 <div id="sddid" class="sddcontent"> <!-- sddcontent START -->
 	<div class="sfs settingstitle">
 		<div>
-			<span style="font-size: 1.5em;">Settings<sup><a class="ttbo" onclick="tdb('acon');">[1]</a><a class="ttbo" onclick="tdb('f2');">[2]</a></sup></span> 
+			<span style="font-size: 1.5em;">Settings<sup><a class="ttbo" onclick="tdb('f2');">[2]</a></sup></span> 
 		</div>
 		<div>
 			<button class="srDefaults" onclick="restoreDefaults();">Restore Defaults</button> 
@@ -233,7 +246,7 @@
 	1234567890!@#$%^&*()? <br>
 	uppercase i, lowercase L, one <br>
 	Il1
-	</p> <a href="ap/tem.html" target="ai" class="ttbo" onclick="tdb('acon');">template</a>
+	</p> <a href="ap/tem.html" target="ai" class="ttbo" onclick="tdb('acon');">template</a> <a href="settings.html">settings</a>
 </section>
 
 </main>
