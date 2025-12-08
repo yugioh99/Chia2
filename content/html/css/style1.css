@@ -563,7 +563,7 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
   min-width: 95vw;
   max-width: 95vw;
   max-height: 85vh;
-  padding: 5px 0px;
+  padding: 5px 1px 25px 1px;
   color: inherit;
   background-color: inherit;
   margin: 5px 0px;
