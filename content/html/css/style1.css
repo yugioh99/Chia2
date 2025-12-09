@@ -245,19 +245,19 @@ header {
   position: relative;
   display: inline;
 }
-  /* location dropdown show hide */
+  /* location dropdown show hide 
   .apddsh:hover .apddcontent {display: block;}
-  .apddsh:hover .apddcontent2 {display: block;}  
+  .apddsh:hover .apddcontent2 {display: block;}  */
 
 /* Dropdown Content (Hidden by Default) */
 .apddcontent {
   display: block;
-  position: absolute;
+  position: static;
   margin-top: 50px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  left: -0px;
+  
   background-color: #dddddd;
   color: rgb(0, 0, 0);
   line-height: 1.5;
@@ -269,14 +269,7 @@ header {
   z-index: 1;
   overflow: auto;
 }
-@media screen and (min-width: 1001px) {
-  .apddcontent  {
-    display: block;
-    margin-left: 85vw;
-    left: -50px;
-    top: 25px;
-    max-height: 80vh;
-  }}
+
 
 .apddcontent2 {
   display: block;
