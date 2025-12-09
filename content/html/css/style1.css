@@ -252,13 +252,12 @@ header {
   position: static;
   margin-top: 50px;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 10%;
   margin-bottom: 0px;
   
-  line-height: 1.5;
+  line-height: 1.85;
   min-width: 160px;
   
-  font-size: 20px;
   resize: both;
   border: 3px solid rgb(146, 70, 8);
   z-index: 1;
@@ -272,7 +271,7 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  left: -0px;
+  left: 0px;
   color: rgb(0, 0, 0);
   min-width: 200px;
   max-height: 40vh;
@@ -284,7 +283,7 @@ header {
 
 /* Links inside the dropdown */
 .apddcontent a {
-  
+  border: none;
   text-decoration: none;
   display: block;
 }
