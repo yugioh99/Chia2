@@ -581,7 +581,7 @@ img {
   cursor: pointer;
 }
 img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration: underline;}
-/* appendix */
+/* appendix 
 .ac {
   display: grid;
   gap: 0px;
@@ -603,7 +603,7 @@ img:hover {color: darkred; background-color: rgb(172, 172, 172); text-decoration
 .gii {
   grid-column: 1 / span 2;
   grid-row: 3;
-}
+}*/
 /* embedded youtube videos */
 .ytvideo {
   width: 560px;
